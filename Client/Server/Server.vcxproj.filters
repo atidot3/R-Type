@@ -13,21 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\CPP">
-      <UniqueIdentifier>{38213345-f975-466d-be82-6a6fd65fd9bf}</UniqueIdentifier>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{882ef8fe-46e1-4cc8-8ed6-d661069ef7da}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\include">
-      <UniqueIdentifier>{1efd59c4-c521-4ad1-85ca-3c4f1a54f9dd}</UniqueIdentifier>
+      <UniqueIdentifier>{c7562595-7645-4b20-85ef-4c464a0329b1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CPP\main_server.cpp">
-      <Filter>Source Files\CPP</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="include\server.hpp">
+    <ClInclude Include="src\server.hpp">
       <Filter>Source Files\include</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main_server.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@
 #include <vector>
 
 #define WELCOME_MSG "salut"
-
+#define SERVER_PORT 4242
 using namespace std;
 
 class Server
