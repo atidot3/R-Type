@@ -3,6 +3,8 @@
 
 #include <list>
 #include <iostream>
+#include <stdlib.h>
+#include <vector>
 
 #define WELCOME_MSG "salut"
 

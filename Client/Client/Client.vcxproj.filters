@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_client.cpp">
+    <ClCompile Include="src\CPP\main_client.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
   </ItemGroup>
