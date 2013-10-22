@@ -60,7 +60,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main_server.cpp" />
+    <ClCompile Include="src\CPP\main_server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\server.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

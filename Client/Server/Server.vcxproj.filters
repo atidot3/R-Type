@@ -16,10 +16,18 @@
     <Filter Include="Source Files\CPP">
       <UniqueIdentifier>{38213345-f975-466d-be82-6a6fd65fd9bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{1efd59c4-c521-4ad1-85ca-3c4f1a54f9dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_server.cpp">
+    <ClCompile Include="src\CPP\main_server.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\server.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
