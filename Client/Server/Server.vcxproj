@@ -11,11 +11,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\bullet.hpp" />
+    <ClInclude Include="src\entity.hpp" />
+    <ClInclude Include="src\game.hpp" />
+    <ClInclude Include="src\identifiable.hpp" />
+    <ClInclude Include="src\level.hpp" />
+    <ClInclude Include="src\monster.hpp" />
+    <ClInclude Include="src\monsterType.hpp" />
+    <ClInclude Include="src\player.hpp" />
+    <ClInclude Include="src\rocket.hpp" />
     <ClInclude Include="src\server.hpp" />
+    <ClInclude Include="src\spawn.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\bullet.cpp" />
+    <ClCompile Include="src\entity.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\identifiable.cpp" />
+    <ClCompile Include="src\level.cpp" />
     <ClCompile Include="src\main_server.cpp" />
+    <ClCompile Include="src\monster.cpp" />
+    <ClCompile Include="src\monsterType.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\rocket.cpp" />
     <ClCompile Include="src\server.cpp" />
+    <ClCompile Include="src\spawn.cpp" />
+    <ClCompile Include="src\time.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6DB0FC01-30D0-405B-9770-30887E1F67F4}</ProjectGuid>
