@@ -14,11 +14,11 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Source Files\Cpp">
-      <UniqueIdentifier>{1163b7c2-f463-4c99-abd0-b54435052c6d}</UniqueIdentifier>
+      <UniqueIdentifier>{856cc805-2317-4007-a0a7-67254b992f5d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_client.cpp">
+    <ClCompile Include="main_server.cpp">
       <Filter>Source Files\Cpp</Filter>
     </ClCompile>
   </ItemGroup>

@@ -13,13 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Cpp">
-      <UniqueIdentifier>{1163b7c2-f463-4c99-abd0-b54435052c6d}</UniqueIdentifier>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{10fdd1ff-dbea-4954-9287-00a473a3c7af}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main_client.cpp">
-      <Filter>Source Files\Cpp</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Server</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

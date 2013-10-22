@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E9A61CA1-3F39-4B4B-9ABB-031B3F109D57}</ProjectGuid>
-    <RootNamespace>RType</RootNamespace>
+    <ProjectGuid>{07704E4C-832B-41AC-98B0-9D5A2FC9B397}</ProjectGuid>
+    <RootNamespace>Serveur</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -60,7 +60,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main_client.cpp" />
+    <ClCompile Include="main_server.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
