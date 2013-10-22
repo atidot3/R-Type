@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <stdlib>
 #include "server.hpp"
 
 using namespace std;
@@ -10,7 +9,8 @@ int	main()
 	srand(43);
 	try 
 	{
-		std::cout << "visual la grosse merde" << std::endl;
+		Server	serv;
+		serv.run();
     } 
 	catch (std::exception* e)
 	{
