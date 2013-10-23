@@ -19,9 +19,6 @@
     <Filter Include="Source Files\include">
       <UniqueIdentifier>{c7562595-7645-4b20-85ef-4c464a0329b1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\src2">
-      <UniqueIdentifier>{458b7a52-4b98-48b9-a25c-037604aeba49}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main_server.cpp">
@@ -63,87 +60,12 @@
     <ClCompile Include="src\time.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="src\filesystem\fileException.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\filesystem\fileUnix.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\filesystem\fileWindows.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\library\libraryException.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\library\libraryUnix.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\library\libraryWindows.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\math\vertex.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sockets\socketException.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sockets\socketUnix.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sockets\socketWindows.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\threads\threadException.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\threads\threadUnix.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
-    <ClCompile Include="src\threads\threadWindows.cpp">
-      <Filter>Source Files\src2</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="threads\iThread.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="threads\threadException.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="threads\threadUnix.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="threads\threadWindows.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\iSocket.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\socketException.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\socketUnix.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\socketWindows.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
     <ClInclude Include="math\time.hpp">
       <Filter>Source Files\include</Filter>
     </ClInclude>
     <ClInclude Include="math\vertex.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\iLibrary.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\libraryException.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\libraryUnix.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\libraryWindows.hpp">
       <Filter>Source Files\include</Filter>
     </ClInclude>
     <ClInclude Include="include\bullet.hpp">
@@ -177,18 +99,6 @@
       <Filter>Source Files\include</Filter>
     </ClInclude>
     <ClInclude Include="include\spawn.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="filesystem\fileException.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="filesystem\fileUnix.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="filesystem\fileWindows.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="filesystem\iFile.hpp">
       <Filter>Source Files\include</Filter>
     </ClInclude>
   </ItemGroup>

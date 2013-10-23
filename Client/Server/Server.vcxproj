@@ -13,36 +13,19 @@
   <ItemGroup>
     <ClCompile Include="src\bullet.cpp" />
     <ClCompile Include="src\entity.cpp" />
-    <ClCompile Include="src\filesystem\fileException.cpp" />
-    <ClCompile Include="src\filesystem\fileUnix.cpp" />
-    <ClCompile Include="src\filesystem\fileWindows.cpp" />
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\identifiable.cpp" />
     <ClCompile Include="src\level.cpp" />
-    <ClCompile Include="src\library\libraryException.cpp" />
-    <ClCompile Include="src\library\libraryUnix.cpp" />
-    <ClCompile Include="src\library\libraryWindows.cpp" />
     <ClCompile Include="src\main_server.cpp" />
-    <ClCompile Include="src\math\vertex.cpp" />
     <ClCompile Include="src\monster.cpp" />
     <ClCompile Include="src\monsterType.cpp" />
     <ClCompile Include="src\player.cpp" />
     <ClCompile Include="src\rocket.cpp" />
     <ClCompile Include="src\server.cpp" />
-    <ClCompile Include="src\sockets\socketException.cpp" />
-    <ClCompile Include="src\sockets\socketUnix.cpp" />
-    <ClCompile Include="src\sockets\socketWindows.cpp" />
     <ClCompile Include="src\spawn.cpp" />
-    <ClCompile Include="src\threads\threadException.cpp" />
-    <ClCompile Include="src\threads\threadUnix.cpp" />
-    <ClCompile Include="src\threads\threadWindows.cpp" />
     <ClCompile Include="src\time.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="filesystem\fileException.hpp" />
-    <ClInclude Include="filesystem\fileUnix.hpp" />
-    <ClInclude Include="filesystem\fileWindows.hpp" />
-    <ClInclude Include="filesystem\iFile.hpp" />
     <ClInclude Include="include\bullet.hpp" />
     <ClInclude Include="include\entity.hpp" />
     <ClInclude Include="include\game.hpp" />
@@ -54,20 +37,8 @@
     <ClInclude Include="include\rocket.hpp" />
     <ClInclude Include="include\server.hpp" />
     <ClInclude Include="include\spawn.hpp" />
-    <ClInclude Include="Library\iLibrary.hpp" />
-    <ClInclude Include="Library\libraryException.hpp" />
-    <ClInclude Include="Library\libraryUnix.hpp" />
-    <ClInclude Include="Library\libraryWindows.hpp" />
     <ClInclude Include="math\time.hpp" />
     <ClInclude Include="math\vertex.hpp" />
-    <ClInclude Include="sockets\iSocket.hpp" />
-    <ClInclude Include="sockets\socketException.hpp" />
-    <ClInclude Include="sockets\socketUnix.hpp" />
-    <ClInclude Include="sockets\socketWindows.hpp" />
-    <ClInclude Include="threads\iThread.hpp" />
-    <ClInclude Include="threads\threadException.hpp" />
-    <ClInclude Include="threads\threadUnix.hpp" />
-    <ClInclude Include="threads\threadWindows.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6DB0FC01-30D0-405B-9770-30887E1F67F4}</ProjectGuid>
@@ -100,7 +71,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>E:\Epitech\RTYPE\R-Type\Client\Server\sockets;E:\Epitech\RTYPE\R-Type\Client\Server\math;E:\Epitech\RTYPE\R-Type\Client\Server\Library;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Epitech\R-Type\Client\Server\threads;E:\Epitech\R-Type\Client\Server\sockets;E:\Epitech\R-Type\Client\Server\math;E:\Epitech\R-Type\Client\Server\Library;E:\Epitech\R-Type\Client\Server\filesystem;E:\Epitech\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
