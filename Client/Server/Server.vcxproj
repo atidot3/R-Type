@@ -11,6 +11,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Library\iLibrary.hpp" />
+    <ClInclude Include="Library\libraryException.hpp" />
+    <ClInclude Include="Library\libraryUnix.hpp" />
+    <ClInclude Include="Library\libraryWindows.hpp" />
+    <ClInclude Include="math\time.hpp" />
+    <ClInclude Include="math\vertex.hpp" />
+    <ClInclude Include="sockets\iSocket.hpp" />
+    <ClInclude Include="sockets\socketException.hpp" />
+    <ClInclude Include="sockets\socketUnix.hpp" />
+    <ClInclude Include="sockets\socketWindows.hpp" />
     <ClInclude Include="src\bullet.hpp" />
     <ClInclude Include="src\entity.hpp" />
     <ClInclude Include="src\game.hpp" />
@@ -69,6 +79,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>E:\Epitech\RTYPE\R-Type\Client\Server\sockets;E:\Epitech\RTYPE\R-Type\Client\Server\math;E:\Epitech\RTYPE\R-Type\Client\Server\Library;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -80,6 +91,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>E:\Epitech\RTYPE\R-Type\Client\Server\sockets;E:\Epitech\RTYPE\R-Type\Client\Server\math;E:\Epitech\RTYPE\R-Type\Client\Server\Library;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
