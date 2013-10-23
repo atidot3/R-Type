@@ -13,16 +13,29 @@
   <ItemGroup>
     <ClCompile Include="src\bullet.cpp" />
     <ClCompile Include="src\entity.cpp" />
+    <ClCompile Include="src\filesystem\fileException.cpp" />
+    <ClCompile Include="src\filesystem\fileUnix.cpp" />
+    <ClCompile Include="src\filesystem\fileWindows.cpp" />
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\identifiable.cpp" />
     <ClCompile Include="src\level.cpp" />
+    <ClCompile Include="src\library\libraryException.cpp" />
+    <ClCompile Include="src\library\libraryUnix.cpp" />
+    <ClCompile Include="src\library\libraryWindows.cpp" />
     <ClCompile Include="src\main_server.cpp" />
+    <ClCompile Include="src\math\vertex.cpp" />
     <ClCompile Include="src\monster.cpp" />
     <ClCompile Include="src\monsterType.cpp" />
     <ClCompile Include="src\player.cpp" />
     <ClCompile Include="src\rocket.cpp" />
     <ClCompile Include="src\server.cpp" />
+    <ClCompile Include="src\sockets\socketException.cpp" />
+    <ClCompile Include="src\sockets\socketUnix.cpp" />
+    <ClCompile Include="src\sockets\socketWindows.cpp" />
     <ClCompile Include="src\spawn.cpp" />
+    <ClCompile Include="src\threads\threadException.cpp" />
+    <ClCompile Include="src\threads\threadUnix.cpp" />
+    <ClCompile Include="src\threads\threadWindows.cpp" />
     <ClCompile Include="src\time.cpp" />
   </ItemGroup>
   <ItemGroup>

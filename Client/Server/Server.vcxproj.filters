@@ -19,6 +19,9 @@
     <Filter Include="Source Files\include">
       <UniqueIdentifier>{c7562595-7645-4b20-85ef-4c464a0329b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src2">
+      <UniqueIdentifier>{458b7a52-4b98-48b9-a25c-037604aeba49}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main_server.cpp">
@@ -59,6 +62,45 @@
     </ClCompile>
     <ClCompile Include="src\time.cpp">
       <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filesystem\fileException.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filesystem\fileUnix.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filesystem\fileWindows.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\library\libraryException.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\library\libraryUnix.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\library\libraryWindows.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\vertex.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sockets\socketException.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sockets\socketUnix.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sockets\socketWindows.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threads\threadException.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threads\threadUnix.cpp">
+      <Filter>Source Files\src2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threads\threadWindows.cpp">
+      <Filter>Source Files\src2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
