@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <iostream>
 #include <string>
-#include "sockets/iSocket.hpp"
+#include "iSocket.hpp"
 
 class SocketWindows : public ISocket
 {

@@ -21,71 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\server.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\bullet.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\entity.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\identifiable.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\level.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\monster.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\monsterType.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\player.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\rocket.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="src\spawn.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\iLibrary.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\libraryException.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\libraryUnix.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\libraryWindows.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="math\time.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="math\vertex.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\iSocket.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\socketException.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\socketUnix.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="sockets\socketWindows.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\main_server.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
@@ -125,5 +60,94 @@
     <ClCompile Include="src\time.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="threads\iThread.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="threads\threadException.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="threads\threadUnix.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="threads\threadWindows.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="sockets\iSocket.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="sockets\socketException.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="sockets\socketUnix.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="sockets\socketWindows.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="math\time.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="math\vertex.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\iLibrary.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\libraryException.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\libraryUnix.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\libraryWindows.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bullet.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\entity.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\game.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\identifiable.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\level.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monster.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monsterType.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\player.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rocket.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\server.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\spawn.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\fileException.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\fileUnix.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\fileWindows.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\iFile.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

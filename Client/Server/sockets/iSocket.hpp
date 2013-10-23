@@ -40,11 +40,11 @@ public:
 
 #ifdef WIN32
     #include "winsock2.h"
-    #include "sockets/socketWindows.hpp"
-#else/*
+    #include "socketWindows.hpp"
+#else
     #include <sys/types.h>
     #include <sys/socket.h>
-    #include "sockets/socketUnix.hpp"*/
+    #include "socketUnix.hpp"
 #endif
 
 #endif //ISOCKET
