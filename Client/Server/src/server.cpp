@@ -23,12 +23,15 @@ void		Server::run()
     srand(time(NULL));
     try 
 	{
-	running = true;
-	while ((running == true))
-	{
-	}
+		running = true;
+		while ((running == true))
+		{
+			//ouverture socket
+			//if (recup buff == welcome) + new player
+		}
     } 
-	catch (std::exception *e) {
+	catch (std::exception *e)
+	{
         cerr << e->what() << endl;
         delete e;
         //sleep(20000);
