@@ -1,3 +1,4 @@
+#include <Windows.h>
 #include <stdlib.h>
 #include <time.h>
 #include "server.hpp"
@@ -34,6 +35,6 @@ void		Server::run()
 	{
         cerr << e->what() << endl;
         delete e;
-        //sleep(20000);
+        Sleep(20000);
     }
 }

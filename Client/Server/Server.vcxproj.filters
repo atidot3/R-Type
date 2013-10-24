@@ -74,11 +74,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="math\time.hpp">
-      <Filter>Source Files\include</Filter>
+    <ClInclude Include="include\Library\iLibrary.hpp">
+      <Filter>Source Files\include\Library</Filter>
     </ClInclude>
-    <ClInclude Include="math\vertex.hpp">
-      <Filter>Source Files\include</Filter>
+    <ClInclude Include="include\Library\libraryException.hpp">
+      <Filter>Source Files\include\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Library\libraryUnix.hpp">
+      <Filter>Source Files\include\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Library\libraryWindows.hpp">
+      <Filter>Source Files\include\Library</Filter>
     </ClInclude>
     <ClInclude Include="include\bullet.hpp">
       <Filter>Source Files\include</Filter>
@@ -112,18 +118,6 @@
     </ClInclude>
     <ClInclude Include="include\spawn.hpp">
       <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Library\iLibrary.hpp">
-      <Filter>Source Files\include\Library</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Library\libraryException.hpp">
-      <Filter>Source Files\include\Library</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Library\libraryUnix.hpp">
-      <Filter>Source Files\include\Library</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Library\libraryWindows.hpp">
-      <Filter>Source Files\include\Library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

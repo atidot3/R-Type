@@ -43,8 +43,6 @@
     <ClInclude Include="include\rocket.hpp" />
     <ClInclude Include="include\server.hpp" />
     <ClInclude Include="include\spawn.hpp" />
-    <ClInclude Include="math\time.hpp" />
-    <ClInclude Include="math\vertex.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6DB0FC01-30D0-405B-9770-30887E1F67F4}</ProjectGuid>
