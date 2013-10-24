@@ -71,7 +71,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>E:\Epitech\R-Type\Client\Server\threads;E:\Epitech\R-Type\Client\Server\sockets;E:\Epitech\R-Type\Client\Server\math;E:\Epitech\R-Type\Client\Server\Library;E:\Epitech\R-Type\Client\Server\filesystem;E:\Epitech\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Documents\GitHub\R-Type\Client\Server\include;E:\Epitech\R-Type\Client\Server\threads;E:\Epitech\R-Type\Client\Server\sockets;E:\Epitech\R-Type\Client\Server\math;E:\Epitech\R-Type\Client\Server\Library;E:\Epitech\R-Type\Client\Server\filesystem;E:\Epitech\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
