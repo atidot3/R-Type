@@ -16,6 +16,8 @@
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\identifiable.cpp" />
     <ClCompile Include="src\level.cpp" />
+    <ClCompile Include="src\Library\libraryException.cpp" />
+    <ClCompile Include="src\Library\libraryWindows.cpp" />
     <ClCompile Include="src\main_server.cpp" />
     <ClCompile Include="src\monster.cpp" />
     <ClCompile Include="src\monsterType.cpp" />
@@ -31,6 +33,10 @@
     <ClInclude Include="include\game.hpp" />
     <ClInclude Include="include\identifiable.hpp" />
     <ClInclude Include="include\level.hpp" />
+    <ClInclude Include="include\Library\iLibrary.hpp" />
+    <ClInclude Include="include\Library\libraryException.hpp" />
+    <ClInclude Include="include\Library\libraryUnix.hpp" />
+    <ClInclude Include="include\Library\libraryWindows.hpp" />
     <ClInclude Include="include\monster.hpp" />
     <ClInclude Include="include\monsterType.hpp" />
     <ClInclude Include="include\player.hpp" />
@@ -83,7 +89,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>E:\Epitech\RTYPE\R-Type\Client\Server\threads;E:\Epitech\RTYPE\R-Type\Client\Server\filesystem;E:\Epitech\RTYPE\R-Type\Client\Server\sockets;E:\Epitech\RTYPE\R-Type\Client\Server\math;E:\Epitech\RTYPE\R-Type\Client\Server\Library;E:\Epitech\RTYPE\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\Library;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include;E:\Epitech\RTYPE\R-Type\Client\Server\threads;E:\Epitech\RTYPE\R-Type\Client\Server\filesystem;E:\Epitech\RTYPE\R-Type\Client\Server\sockets;E:\Epitech\RTYPE\R-Type\Client\Server\math;E:\Epitech\RTYPE\R-Type\Client\Server\Library;E:\Epitech\RTYPE\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
