@@ -5,12 +5,16 @@
 
 Server::Server(int port) : running(false)
 {
-
+	game = NULL;
 }
 
 Server::~Server()
 {
-
+	while (games.size() > 0)
+    {
+        delete games.front();
+        games.pop_front();
+    }
 }
 
 void		Server::stop()
