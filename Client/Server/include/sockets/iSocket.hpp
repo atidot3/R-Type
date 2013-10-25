@@ -2,6 +2,7 @@
 # define ISOCKET
 
 #include "sockets/socketException.hpp"
+#include "log.hpp"
 
 #define SERVER_PORT 2468
 #define CLIENT_PORT 2469

@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include "server.hpp"
+#include "log.hpp"
 #include <windows.h>
 #include "sockets/iSocket.hpp"
 

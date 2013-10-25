@@ -4,6 +4,7 @@
 #include <list>
 #include <iostream>
 
+#include "log.hpp"
 #include "game.hpp"
 #include "player.hpp"
 #include <winsock2.h>

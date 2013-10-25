@@ -40,15 +40,16 @@ Player*     findPlayer(string& ip)
 
 void		Server::run()
 {
+	Logger::Instance()->open("Server.txt");
 	string	buff, ip;
     Player* p;
 
     srand(time(NULL));
-
+	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
     try
 	{
 		running = true;
-		while ((running == true))
+		while (running == true)
 		{
 			buff = socket->recv(100, &ip);
 		    /*if ((p = findPlayer(ip)))
