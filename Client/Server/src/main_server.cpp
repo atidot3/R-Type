@@ -18,7 +18,7 @@ int	main()
 	catch (std::exception* e)
 	{
         std::cerr << e->what() << std::endl;
-		Logger::Instance()->log(0, e->what());
+		Logger::Instance()->log(3, e->what());
         delete e;
     }
 	Logger::Instance()->log(0, "Exit with code 0");
