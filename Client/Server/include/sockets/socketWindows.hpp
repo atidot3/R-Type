@@ -4,7 +4,7 @@
 #pragma comment(lib, "ws2_32.lib")
 #include <iostream>
 #include <string>
-#include <winsock2.h>
+#include "server.hpp"
 #include <windows.h>
 #include "sockets/iSocket.hpp"
 

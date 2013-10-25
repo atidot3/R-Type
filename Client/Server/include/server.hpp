@@ -3,13 +3,14 @@
 
 #include <list>
 #include <iostream>
-#include <stdlib.h>
-#include <vector>
-#include "player.hpp"
+
 #include "game.hpp"
+#include "player.hpp"
+#include <winsock2.h>
+#include <Windows.h>
+#include "sockets/iSocket.hpp"
 
 #define WELCOME_MSG "salut"
-#define SERVER_PORT 4242
 using namespace std;
 
 class Server
@@ -29,7 +30,7 @@ public:
 private:
 	PlayerList	players;
 	GameList	games;
-	//ISocket		*socket;
+	ISocket		*socket;
 	Game*   	game;
 	bool		running;
 };

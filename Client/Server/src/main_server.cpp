@@ -1,6 +1,7 @@
 #include <iostream>
-#include <string>
 #include "server.hpp"
+#include <stdlib.h>
+#include <vector>
 #include "log.hpp"
 
 using namespace std;

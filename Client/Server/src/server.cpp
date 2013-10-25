@@ -1,10 +1,10 @@
-#include <Windows.h>
-#include <stdlib.h>
-#include <time.h>
 #include "server.hpp"
+#include "time.h"
+#include "stdlib.h"
 
 Server::Server(int port) : running(false)
 {
+	socket = new AbstractSocket(port);
 	game = NULL;
 }
 
@@ -15,16 +15,12 @@ Server::~Server()
         delete games.front();
         games.pop_front();
     }
+	delete socket;
 }
 
 void		Server::stop()
 {
     running = false;
-}
-
-Player*     findPlayer(string& ip)
-{
-    return (NULL);
 }
 
 Server::PlayerList& Server::getPlayers()
@@ -37,23 +33,29 @@ Game*&      Server::getCurrentGame()
     return game;
 }
 
+Player*     findPlayer(string& ip)
+{
+    return (NULL);
+}
+
 void		Server::run()
 {
 	string	buff, ip;
     Player* p;
 
     srand(time(NULL));
+
     try
 	{
 		running = true;
 		while ((running == true))
 		{
-			/*buff = socket->recv(100, &ip);
-		    if ((p = findPlayer(ip)))
+			buff = socket->recv(100, &ip);
+		    /*if ((p = findPlayer(ip)))
 		    {
 		        p->recv(buff);
-		    }
-		    else if (buff == WELCOME_MSG)
+		    }*/
+		    if (buff == WELCOME_MSG)
 		    {
 		        cout << "New client " << ip << endl;
 		        if (!game)
@@ -66,9 +68,9 @@ void		Server::run()
 		        cout << "Added to game " << game->getId() << endl;
 		        p = new Player(game, ip);
 		        players.push_back(p);
-		    }*/
+		    }
 		}
-    } 
+	}
 	catch (std::exception *e)
 	{
         cerr << e->what() << endl;
