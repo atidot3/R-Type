@@ -25,6 +25,12 @@
     <Filter Include="Source Files\src\Library">
       <UniqueIdentifier>{faa1b50f-ab57-41a6-8946-36ab6d1f729d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\include\math">
+      <UniqueIdentifier>{ed564a2d-57eb-4b2a-9245-45e61606da00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\math">
+      <UniqueIdentifier>{4a72eb0a-063d-4277-ac61-31bc850f9804}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main_server.cpp">
@@ -72,15 +78,15 @@
     <ClCompile Include="src\Library\libraryWindows.cpp">
       <Filter>Source Files\src\Library</Filter>
     </ClCompile>
+    <ClCompile Include="src\math\vertex.cpp">
+      <Filter>Source Files\src\math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Library\iLibrary.hpp">
       <Filter>Source Files\include\Library</Filter>
     </ClInclude>
     <ClInclude Include="include\Library\libraryException.hpp">
-      <Filter>Source Files\include\Library</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Library\libraryUnix.hpp">
       <Filter>Source Files\include\Library</Filter>
     </ClInclude>
     <ClInclude Include="include\Library\libraryWindows.hpp">
@@ -118,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="include\spawn.hpp">
       <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\time.hpp">
+      <Filter>Source Files\include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\vertex.hpp">
+      <Filter>Source Files\include\math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

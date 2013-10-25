@@ -19,6 +19,7 @@
     <ClCompile Include="src\Library\libraryException.cpp" />
     <ClCompile Include="src\Library\libraryWindows.cpp" />
     <ClCompile Include="src\main_server.cpp" />
+    <ClCompile Include="src\math\vertex.cpp" />
     <ClCompile Include="src\monster.cpp" />
     <ClCompile Include="src\monsterType.cpp" />
     <ClCompile Include="src\player.cpp" />
@@ -35,8 +36,9 @@
     <ClInclude Include="include\level.hpp" />
     <ClInclude Include="include\Library\iLibrary.hpp" />
     <ClInclude Include="include\Library\libraryException.hpp" />
-    <ClInclude Include="include\Library\libraryUnix.hpp" />
     <ClInclude Include="include\Library\libraryWindows.hpp" />
+    <ClInclude Include="include\math\time.hpp" />
+    <ClInclude Include="include\math\vertex.hpp" />
     <ClInclude Include="include\monster.hpp" />
     <ClInclude Include="include\monsterType.hpp" />
     <ClInclude Include="include\player.hpp" />
@@ -75,7 +77,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>E:\Documents\GitHub\R-Type\Client\Server\include;E:\Epitech\R-Type\Client\Server\threads;E:\Epitech\R-Type\Client\Server\sockets;E:\Epitech\R-Type\Client\Server\math;E:\Epitech\R-Type\Client\Server\Library;E:\Epitech\R-Type\Client\Server\filesystem;E:\Epitech\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Epitech\R-Type\Client\Server\include\math;E:\Epitech\R-Type\Client\Server\include\Library;E:\Documents\GitHub\R-Type\Client\Server\include;E:\Epitech\R-Type\Client\Server\threads;E:\Epitech\R-Type\Client\Server\sockets;E:\Epitech\R-Type\Client\Server\math;E:\Epitech\R-Type\Client\Server\Library;E:\Epitech\R-Type\Client\Server\filesystem;E:\Epitech\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
