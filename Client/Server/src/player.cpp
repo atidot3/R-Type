@@ -4,7 +4,7 @@
 #include "rocket.hpp"
 #include "bullet.hpp"
 
-Player::Player()
+Player::Player(Game* game, string ip)
 {
 	level = 1;
     life = 1;

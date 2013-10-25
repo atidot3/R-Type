@@ -15,7 +15,7 @@ class Spawn;
 class Player : public Identifiable, public Entity
 {
 public:
-	Player(/*Game* game, string ip*/);
+	Player(Game* game, string ip);
 	~Player();
 	void		send(string data); // send data to graphic terminal
 	void		recv(string& data); // callback on data receive
