@@ -24,7 +24,7 @@
     <ClCompile Include="src\CPP\main_client.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Visual Studio 2010\Projects\test_log\test_log\log.cpp">
+    <ClCompile Include="log.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
   </ItemGroup>

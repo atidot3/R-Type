@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Visual Studio 2010\Projects\test_log\test_log\log.cpp" />
+    <ClCompile Include="log.cpp" />
     <ClCompile Include="src\CPP\main_client.cpp" />
   </ItemGroup>
   <ItemGroup>
