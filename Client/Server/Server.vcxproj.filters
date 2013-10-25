@@ -81,6 +81,9 @@
     <ClCompile Include="src\math\vertex.cpp">
       <Filter>Source Files\src\math</Filter>
     </ClCompile>
+    <ClCompile Include="..\Client\src\CPP\log.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Library\iLibrary.hpp">
@@ -130,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="include\math\vertex.hpp">
       <Filter>Source Files\include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\log.hpp">
+      <Filter>Source Files\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -24,6 +24,9 @@
     <ClCompile Include="src\CPP\main_client.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="src\CPP\log.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\log.hpp">

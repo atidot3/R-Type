@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Client\src\CPP\log.cpp" />
     <ClCompile Include="src\bullet.cpp" />
     <ClCompile Include="src\entity.cpp" />
     <ClCompile Include="src\game.cpp" />
@@ -37,6 +38,7 @@
     <ClInclude Include="include\Library\iLibrary.hpp" />
     <ClInclude Include="include\Library\libraryException.hpp" />
     <ClInclude Include="include\Library\libraryWindows.hpp" />
+    <ClInclude Include="include\log.hpp" />
     <ClInclude Include="include\math\time.hpp" />
     <ClInclude Include="include\math\vertex.hpp" />
     <ClInclude Include="include\monster.hpp" />

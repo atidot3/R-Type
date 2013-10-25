@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CPP\log.cpp" />
     <ClCompile Include="src\CPP\main_client.cpp" />
   </ItemGroup>
   <ItemGroup>
