@@ -18,10 +18,15 @@ void		Server::stop()
     running = false;
 }
 
+Player*     findPlayer(string& ip)
+{
+    return (NULL);
+}
+
 void		Server::run()
 {
 	string	buff, ip;
-    //Player* p;
+    Player* p;
 
     srand(time(NULL));
 
