@@ -1,6 +1,6 @@
-/*#include "sockets/socketWindows.hpp"
+//#include <unistd.h>
 #include <stdio.h>
-#include <unistd.h>
+#include "sockets/socketWindows.hpp"
 
 SocketWindows::SocketWindows(const std::string ip, int port, const std::string mode) : hSocket(0)
 {
@@ -106,11 +106,11 @@ std::string SocketWindows::recv(int len, string* ip)
         if (ip)
             (*ip) = inet_ntoa(fromSin.sin_addr);
     }
-    else
+    /*else
     {
         if ((size = read(this->hSocket, buf, len)) == -1)
             throw new SocketException("Could not read on TCP socket.");
-    }
+    }*/
     std::string res(buf, size);
     delete[] buf;
     return (res);
@@ -121,4 +121,4 @@ SocketWindows::~SocketWindows()
     if (::closesocket(this->hSocket))
         throw new SocketException("Can't close socket");
     WSACleanup();
-}*/
+}

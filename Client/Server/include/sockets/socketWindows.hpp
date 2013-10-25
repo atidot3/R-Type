@@ -1,9 +1,11 @@
 #ifndef SOCKETWINDOWS
 # define SOCKETWINDOWS
 
-#include <windows.h>
+#pragma comment(lib, "ws2_32.lib")
 #include <iostream>
 #include <string>
+#include <winsock2.h>
+#include <windows.h>
 #include "sockets/iSocket.hpp"
 
 class SocketWindows : public ISocket

@@ -39,7 +39,6 @@ public:
 };
 
 #ifdef WIN32
-    #include "winsock2.h"
     #include "sockets/socketWindows.hpp"
 #else
     #include <sys/types.h>
