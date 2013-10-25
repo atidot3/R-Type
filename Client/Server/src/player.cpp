@@ -4,8 +4,9 @@
 #include "rocket.hpp"
 #include "bullet.hpp"
 
-Player::Player(Game* game, string ip)
+Player::Player(Game* game, string ip) : game(game), ip(ip)
 {
+	color = game->addPlayer(this);
 	level = 1;
     life = 1;
 	_isAlive = true;

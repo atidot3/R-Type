@@ -6,6 +6,7 @@
 #include "player.hpp"
 #include "server.hpp"
 #include "identifiable.hpp"
+
 #define MAX_PLAYERS 4
 
 using namespace std;

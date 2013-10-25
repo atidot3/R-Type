@@ -2,9 +2,11 @@
 # define PLAYER
 
 #include <string>
+#include "math/vertex.hpp"
+#include "math/time.hpp"
+//#include "sockets/iSocket.hpp"
 #include "identifiable.hpp"
 #include "entity.hpp"
-
 
 using namespace std;
 
@@ -24,21 +26,21 @@ public:
     bool	    stuck() const;
     void        die();
     bool        isAlive() const;
+    Seconds     getAliveTime() const;
     string      getIp() const;
     void        init(); // called when the game start
     void        sendMovePacket() const;
     void        checkBounds();
+
 private:
 	int			color;
 	int         level;
 	bool        _isAlive;
-	//Game*		game;
+	Game*		game;
 	char        life;
+	//ISocket*	socket;
 	string		ip;
+    //Seconds     begin, charge, alive, lastDeath;
 };
 
 #endif // PLAYER
-
-
-
-
