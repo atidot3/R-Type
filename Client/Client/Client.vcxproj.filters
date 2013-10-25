@@ -16,10 +16,21 @@
     <Filter Include="Source Files\CPP">
       <UniqueIdentifier>{46b6fe13-4691-4fb6-85cf-cf791b68fa6b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{5e9beec4-420a-4a26-9de0-1e6e0707162f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CPP\main_client.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Visual Studio 2010\Projects\test_log\test_log\log.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\log.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
