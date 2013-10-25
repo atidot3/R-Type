@@ -26,6 +26,8 @@
     <ClCompile Include="src\player.cpp" />
     <ClCompile Include="src\rocket.cpp" />
     <ClCompile Include="src\server.cpp" />
+    <ClCompile Include="src\sockets\socketException.cpp" />
+    <ClCompile Include="src\sockets\socketWindows.cpp" />
     <ClCompile Include="src\spawn.cpp" />
     <ClCompile Include="src\time.cpp" />
   </ItemGroup>
@@ -46,6 +48,10 @@
     <ClInclude Include="include\player.hpp" />
     <ClInclude Include="include\rocket.hpp" />
     <ClInclude Include="include\server.hpp" />
+    <ClInclude Include="include\sockets\iSocket.hpp" />
+    <ClInclude Include="include\sockets\socketException.hpp" />
+    <ClInclude Include="include\sockets\socketUnix.hpp" />
+    <ClInclude Include="include\sockets\socketWindows.hpp" />
     <ClInclude Include="include\spawn.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

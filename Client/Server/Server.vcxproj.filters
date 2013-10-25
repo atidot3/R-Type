@@ -31,6 +31,12 @@
     <Filter Include="Source Files\src\math">
       <UniqueIdentifier>{4a72eb0a-063d-4277-ac61-31bc850f9804}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\include\socket">
+      <UniqueIdentifier>{3e260879-f9da-46a9-a71a-bd8147c03318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\socket">
+      <UniqueIdentifier>{e0994402-8e1b-4263-b985-e6f1351ba992}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main_server.cpp">
@@ -84,6 +90,12 @@
     <ClCompile Include="..\Client\src\CPP\log.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\sockets\socketException.cpp">
+      <Filter>Source Files\src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sockets\socketWindows.cpp">
+      <Filter>Source Files\src\socket</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Library\iLibrary.hpp">
@@ -136,6 +148,18 @@
     </ClInclude>
     <ClInclude Include="include\log.hpp">
       <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sockets\iSocket.hpp">
+      <Filter>Source Files\include\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sockets\socketException.hpp">
+      <Filter>Source Files\include\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sockets\socketWindows.hpp">
+      <Filter>Source Files\include\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sockets\socketUnix.hpp">
+      <Filter>Source Files\include\socket</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
