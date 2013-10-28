@@ -43,7 +43,7 @@ void		Server::run()
 	Logger::Instance()->open("Server.txt");
 	string	buff, ip;
     Player* p;
-
+	ip = "127.0.0.1";
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
     try
