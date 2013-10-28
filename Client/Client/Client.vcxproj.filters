@@ -27,9 +27,21 @@
     <ClCompile Include="src\CPP\log.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="src\CPP\client.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPP\socketException.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CPP\socketWindows.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\log.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\client.hpp">
       <Filter>Source Files\include</Filter>
     </ClInclude>
   </ItemGroup>

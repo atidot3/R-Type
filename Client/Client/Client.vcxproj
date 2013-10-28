@@ -11,10 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CPP\client.cpp" />
     <ClCompile Include="src\CPP\log.cpp" />
     <ClCompile Include="src\CPP\main_client.cpp" />
+    <ClCompile Include="src\CPP\socketException.cpp" />
+    <ClCompile Include="src\CPP\socketWindows.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\include\client.hpp" />
     <ClInclude Include="src\include\log.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -60,7 +64,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\Users\benjamin\Documents\GitHub\R-Type\Client\Client\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\sockets;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\math;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\Library;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Client\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
