@@ -87,14 +87,14 @@
     <ClCompile Include="src\math\vertex.cpp">
       <Filter>Source Files\src\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\Client\src\CPP\log.cpp">
-      <Filter>Source Files\src</Filter>
-    </ClCompile>
     <ClCompile Include="src\sockets\socketException.cpp">
       <Filter>Source Files\src\socket</Filter>
     </ClCompile>
     <ClCompile Include="src\sockets\socketWindows.cpp">
       <Filter>Source Files\src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Client\src\CPP\log.cpp">
+      <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
