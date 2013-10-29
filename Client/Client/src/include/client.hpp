@@ -13,7 +13,7 @@ class Client
 {
 public:
 
-	Client(int port = SERVER_PORT);
+	Client(int port = CLIENT_PORT);
 	~Client();
 	void		run();
 	void		stop();

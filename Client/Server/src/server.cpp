@@ -52,6 +52,7 @@ void		Server::run()
 		while (running == true)
 		{
 			buff = socket->recv(100, &ip);
+			socket->send("salut", ip, CLIENT_PORT);
 		    /*if ((p = findPlayer(ip)))
 		    {
 		        p->recv(buff);

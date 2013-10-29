@@ -4,7 +4,7 @@
 
 Client::Client(int port) : running(false)
 {
-	socket = new AbstractSocket("127.0.0.1", port);
+	socket = new AbstractSocket(port);
 }
 
 Client::~Client()
@@ -52,7 +52,8 @@ void		Client::run()
 		while (running == true)
 		{
 			socket->send("salut", ip, SERVER_PORT);
-		    /*if ((p = findPlayer(ip)))
+		    buff = socket->recv(100, &ip);
+			/*if ((p = findPlayer(ip)))
 		    {
 		        p->recv(buff);
 		    }*/
