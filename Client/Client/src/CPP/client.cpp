@@ -41,8 +41,9 @@ void		Client::run()
 {
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
-	ip = "127.0.0.1";
-//    Player* p;
+	std::cout << "Enter the server ip" << std::endl;
+	ip = scanf("%s", ip);
+	//    Player* p;
 
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
@@ -53,23 +54,9 @@ void		Client::run()
 		{
 			socket->send("salut", ip, SERVER_PORT);
 		    buff = socket->recv(100, &ip);
-			/*if ((p = findPlayer(ip)))
-		    {
-		        p->recv(buff);
-		    }*/
 		    if (buff == WELCOME_MSG)
 		    {
 		        cout << "New client " << ip << endl;
-	/*	        if (!game)
-		            game = new Game(this);
-		        if (game->started() || game->getPlayers().size() >= MAX_PLAYERS)
-		        {
-		            // New game
-		            game = new Game(this);
-		        }
-		        cout << "Added to game " << game->getId() << endl;
-		        p = new Player(game, ip);
-		        players.push_back(p); */
 		    }
 		}
 	}
