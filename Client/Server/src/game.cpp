@@ -14,21 +14,44 @@ Game::Game(Server* server) : server(server)
     life = 5;
     score = 0;
     referee = NULL;
+    begin = -1;
 }
 
 Game::~Game()
 {
     cout << "Destroying game " << getId() << endl;
+ 	Player *pl;
+	while (players.size() > 0)
+	{
+		pl = players.front();
+		delete (pl);
+		server->getPlayers().remove(pl);
+		players.pop_front();
+	}
+    server->getCurrentGame() = NULL;
 }
 
 void	Game::start()
 {
-
+    if (started())
+    	return;
+    begin = now();
+    cout << "Starting game " << getId() << endl;
+    time = 0;
+    last = 0;
+    pos = 0;
+    endTime = -1;
+    sendAll(t);
+    PlayerList::iterator pl, plEnd = players.end();
+	for (pl = players.begin(); pl != plEnd; ++pl)
+	{
+		(*pl)->init();
+	}
 }
 
 int    Game::pixPos() const
 {
-	return 0;
+	return (time * BLOCKS_PER_SECOND * blockSize);
 }
 
 bool   Game::nextLevel()
@@ -39,7 +62,7 @@ bool   Game::nextLevel()
 
 bool    Game::started() const
 {
-    return false;
+    return (begin > 0);
 }
 
 void    Game::sendMapInfo() const

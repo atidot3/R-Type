@@ -52,10 +52,10 @@ public:
     Player*     getReferee() const;
 private:
 	int         pos; // game position (in pixels)
-    //Seconds     time; // game position (in seconds)
-    //Seconds     begin; // game start (in seconds)
-    //Seconds     last; // last frame (in seconds)
-    //Seconds     endTime; // Level end time (used for tempo)
+    Seconds     time; // game position (in seconds)
+    Seconds     begin; // game start (in seconds)
+    Seconds     last; // last frame (in seconds)
+    Seconds     endTime; // Level end time (used for tempo)
     int         life; // players life (when 0, restart at the level begining)
     int         score; // game total score
     //Level       *level; // current game level

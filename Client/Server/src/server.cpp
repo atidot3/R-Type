@@ -35,6 +35,15 @@ Game*&      Server::getCurrentGame()
 
 Player*     findPlayer(string& ip)
 {
+	/*PlayerList::iterator pl, plEnd; 
+	plEnd = players.end();
+	pl = players.begin();
+	while (pl != plEnd)
+	{
+		if ((*pl)->getIp() == ip)
+            return (*pl);
+		++pl;
+	}*/
     return (NULL);
 }
 
@@ -51,12 +60,12 @@ void		Server::run()
 		running = true;
 		while (running == true)
 		{
-			buff = socket->recv(100, &ip);
-			socket->send("salut", ip, CLIENT_PORT);
 		    /*if ((p = findPlayer(ip)))
 		    {
 		        p->recv(buff);
 		    }*/
+			buff = socket->recv(100, &ip);
+			socket->send("salut", ip, CLIENT_PORT);
 		    if (buff == WELCOME_MSG)
 		    {
 		        cout << "New client " << ip << endl;
