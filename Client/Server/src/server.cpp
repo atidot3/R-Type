@@ -18,6 +18,20 @@ Server::~Server()
 	delete socket;
 }
 
+Player*     findPlayer(string& ip)
+{
+/*	PlayerList::iterator pl, plEnd; 
+	plEnd = players.end();
+	pl = players.begin();
+	while (pl != plEnd)
+	{
+		if ((*pl)->getIp() == ip)
+            return (*pl);
+		++pl;
+	}*/
+    return (NULL);
+}
+
 void		Server::stop()
 {
     running = false;
@@ -31,20 +45,6 @@ Server::PlayerList& Server::getPlayers()
 Game*&      Server::getCurrentGame()
 {
     return game;
-}
-
-Player*     findPlayer(string& ip)
-{
-	/*PlayerList::iterator pl, plEnd; 
-	plEnd = players.end();
-	pl = players.begin();
-	while (pl != plEnd)
-	{
-		if ((*pl)->getIp() == ip)
-            return (*pl);
-		++pl;
-	}*/
-    return (NULL);
 }
 
 void		Server::run()

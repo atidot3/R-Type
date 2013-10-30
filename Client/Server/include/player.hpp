@@ -8,6 +8,8 @@
 #include "identifiable.hpp"
 #include "entity.hpp"
 
+#define PLAYER_ALIVE	5
+
 using namespace std;
 
 class Game;
@@ -21,7 +23,7 @@ public:
 	~Player();
 	void		send(string data); // send data to graphic terminal
 	void		recv(string& data); // callback on data receive
-    void        update(); // update player's position
+    void        update(Seconds); // update player's position
     char        getColor() const;
     bool	    stuck() const;
     void        die();
@@ -40,7 +42,7 @@ private:
 	char        life;
 	//ISocket*	socket;
 	string		ip;
-    //Seconds     begin, charge, alive, lastDeath;
+    Seconds     begin, charge, alive, lastDeath;
 };
 
 #endif // PLAYER

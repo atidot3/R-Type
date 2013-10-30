@@ -41,8 +41,7 @@ void		Client::run()
 {
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
-	std::cout << "Enter the server ip" << std::endl;
-	ip = scanf("%s", ip);
+	ip = "127.0.0.1";
 	//    Player* p;
 
     srand(time(NULL));

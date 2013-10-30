@@ -151,6 +151,11 @@ Game::PlayerList& Game::getPlayers()
     return players;
 }
 
+float       Game::getTime() const
+{
+    return time;
+}
+
 Player*     Game::getReferee() const
 {
     return referee;

@@ -27,6 +27,7 @@ public:
 	Player*     findPlayer(string& ip);
 	PlayerList& getPlayers();
 	Game*&      getCurrentGame();
+
 private:
 	PlayerList	players;
 	GameList	games;
