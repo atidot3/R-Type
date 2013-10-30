@@ -41,7 +41,6 @@ void	Game::start()
     last = 0;
     pos = 0;
     endTime = -1;
-    sendAll(t);
     PlayerList::iterator pl, plEnd = players.end();
 	for (pl = players.begin(); pl != plEnd; ++pl)
 	{
