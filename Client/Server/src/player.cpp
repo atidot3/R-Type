@@ -32,7 +32,7 @@ void Player::die()
     life--;
     if (life == 0)
         this->_isAlive = false;
-    t += "0x05";
+    t += DIE;
     t = Formater::pack<int>(t, this->getId());
     t = Formater::pack<char>(t, this->life);
     game->sendAll(t);
@@ -101,7 +101,7 @@ void        Player::sendMovePacket() const
 {
     string t;
 
-	t += "0x03";
+	t += MOVE_PACKET;
 	t = Formater::pack<int>(t, getId());
 	t = Formater::pack<char>(t, color);
 	t = Formater::pack<float>(t, game->getTime());

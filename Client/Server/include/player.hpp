@@ -8,6 +8,8 @@
 #include "identifiable.hpp"
 #include "entity.hpp"
 
+#define	DIE				0x05;
+#define	MOVE_PACKET			0x03;
 #define PLAYER_ALIVE	5
 
 using namespace std;
