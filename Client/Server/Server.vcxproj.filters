@@ -37,6 +37,12 @@
     <Filter Include="Source Files\src\socket">
       <UniqueIdentifier>{e0994402-8e1b-4263-b985-e6f1351ba992}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\threads">
+      <UniqueIdentifier>{12aa5da9-1085-4423-88b1-6146f55189b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\threads">
+      <UniqueIdentifier>{25b452d4-2f65-4b06-8801-586953d687fc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main_server.cpp">
@@ -95,6 +101,12 @@
     </ClCompile>
     <ClCompile Include="..\Client\src\CPP\log.cpp">
       <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threads\threadException.cpp">
+      <Filter>Source Files\src\threads</Filter>
+    </ClCompile>
+    <ClCompile Include="src\threads\threadWindows.cpp">
+      <Filter>Source Files\src\threads</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +172,18 @@
     </ClInclude>
     <ClInclude Include="include\sockets\socketUnix.hpp">
       <Filter>Source Files\include\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\threads\iThread.hpp">
+      <Filter>Source Files\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="include\threads\threadException.hpp">
+      <Filter>Source Files\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="include\threads\threadUnix.hpp">
+      <Filter>Source Files\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="include\threads\threadWindows.hpp">
+      <Filter>Source Files\threads</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

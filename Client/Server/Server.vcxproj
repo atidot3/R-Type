@@ -29,6 +29,8 @@
     <ClCompile Include="src\sockets\socketException.cpp" />
     <ClCompile Include="src\sockets\socketWindows.cpp" />
     <ClCompile Include="src\spawn.cpp" />
+    <ClCompile Include="src\threads\threadException.cpp" />
+    <ClCompile Include="src\threads\threadWindows.cpp" />
     <ClCompile Include="src\time.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +55,10 @@
     <ClInclude Include="include\sockets\socketUnix.hpp" />
     <ClInclude Include="include\sockets\socketWindows.hpp" />
     <ClInclude Include="include\spawn.hpp" />
+    <ClInclude Include="include\threads\iThread.hpp" />
+    <ClInclude Include="include\threads\threadException.hpp" />
+    <ClInclude Include="include\threads\threadUnix.hpp" />
+    <ClInclude Include="include\threads\threadWindows.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6DB0FC01-30D0-405B-9770-30887E1F67F4}</ProjectGuid>
