@@ -37,11 +37,11 @@
     <Filter Include="Source Files\src\socket">
       <UniqueIdentifier>{e0994402-8e1b-4263-b985-e6f1351ba992}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\threads">
-      <UniqueIdentifier>{12aa5da9-1085-4423-88b1-6146f55189b7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\src\threads">
       <UniqueIdentifier>{25b452d4-2f65-4b06-8801-586953d687fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\threads">
+      <UniqueIdentifier>{12aa5da9-1085-4423-88b1-6146f55189b7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -174,16 +174,16 @@
       <Filter>Source Files\include\socket</Filter>
     </ClInclude>
     <ClInclude Include="include\threads\iThread.hpp">
-      <Filter>Source Files\threads</Filter>
+      <Filter>Source Files\include\threads</Filter>
     </ClInclude>
     <ClInclude Include="include\threads\threadException.hpp">
-      <Filter>Source Files\threads</Filter>
+      <Filter>Source Files\include\threads</Filter>
     </ClInclude>
     <ClInclude Include="include\threads\threadUnix.hpp">
-      <Filter>Source Files\threads</Filter>
+      <Filter>Source Files\include\threads</Filter>
     </ClInclude>
     <ClInclude Include="include\threads\threadWindows.hpp">
-      <Filter>Source Files\threads</Filter>
+      <Filter>Source Files\include\threads</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
