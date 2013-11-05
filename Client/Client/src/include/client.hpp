@@ -4,7 +4,7 @@
 #include "log.hpp"
 #include <winsock2.h>
 #include <Windows.h>
-#include "sockets/iSocket.hpp"
+#include "iSocket.hpp"
 
 #define WELCOME_MSG "salut"
 using namespace std;

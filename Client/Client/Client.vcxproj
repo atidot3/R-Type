@@ -52,7 +52,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Client\src\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\math;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\sockets;E:\Epitech\R-Type\Client\Client\src\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Client\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Server\include;C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Server\include\sockets;C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Server\include\math;C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Client\src\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Client\src\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\math;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\sockets;E:\Epitech\R-Type\Client\Client\src\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Client\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
