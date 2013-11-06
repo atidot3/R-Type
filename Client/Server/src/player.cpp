@@ -123,10 +123,7 @@ void        Player::checkBounds()
 void		Player::recv(string& data)
 {
 	unsigned char   command;
-	char			test = "start_player";
 
     command = data[0];
     data.erase(0, 1);
-	if ((command == test) && game->getReferee() == this)
-		game->start();
 }
