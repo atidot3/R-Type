@@ -20,7 +20,7 @@ Server::~Server()
 
 Player*     findPlayer(string& ip)
 {
-/*	PlayerList::iterator pl, plEnd; 
+	/*PlayerList::iterator pl, plEnd; 
 	plEnd = players.end();
 	pl = players.begin();
 	while (pl != plEnd)
