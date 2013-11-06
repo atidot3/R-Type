@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class MonsterType;
+class monsterGest;
 class Game;
 class Spawn;
 

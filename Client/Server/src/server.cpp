@@ -20,10 +20,9 @@ Server::~Server()
 
 Player*     Server::findPlayer(string& ip)
  {
-	list<Player*>	playerss;
 	list<Player*>::iterator pl, plEnd; 
-	plEnd = playerss.end();
-	pl = playerss.begin();
+	plEnd = players.end();
+	pl = players.begin();
 	while (pl != plEnd)
 	{
 		if ((*pl)->getIp() == ip)
@@ -60,23 +59,23 @@ void		Server::run()
 		running = true;
 		while (running == true)
 		{
+			cout << ip << endl;
 			buff = socket->recv(100, &ip);
+			cout << ip << endl;
 			p = this->findPlayer(ip);
 		    if (p)
 		    {
-				Logger::Instance()->log(1, "client already connected\n");
+				Logger::Instance()->log(0, "client already connected\n");
 		        p->recv(buff);
 		    }
 			socket->send("salut", ip, CLIENT_PORT);
 		    if (buff == WELCOME_MSG)
 		    {
 		        cout << "New client " << ip << endl;
-				Logger::Instance()->log(0, "New client\n");
 		        if (!game)
 		            game = new Game(this);
 		        if (game->started() || game->getPlayers().size() >= MAX_PLAYERS)
 		        {
-					Logger::Instance()->log(0, "new Game\n");
 		            game = new Game(this);
 		        }
 		        cout << "Added to game " << game->getId() << endl;

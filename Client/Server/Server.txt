@@ -1,0 +1,10 @@
+Debug - Nov  6 2013 18:59:06 | ----------------Server Initialized-------------
+
+Debug - Nov  6 2013 18:59:06 | ----------------Server Starting...-------------
+
+Debug - Nov  6 2013 18:59:06 | New client
+
+Warning - Nov  6 2013 18:59:06 | client already connected
+
+Debug - Nov  6 2013 18:59:06 | New client
+
