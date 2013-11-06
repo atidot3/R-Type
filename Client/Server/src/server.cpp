@@ -18,7 +18,7 @@ Server::~Server()
 	delete socket;
 }
 
-Player*     findPlayer(string& ip)
+Player*     Server::findPlayer(string& ip)
  {
 	list<Player*>	playerss;
 	list<Player*>::iterator pl, plEnd; 
@@ -61,11 +61,11 @@ void		Server::run()
 		running = true;
 		while (running == true)
 		{
-/*		    if ((p = this->findPlayer(ip)))
+		    if ((p = this->findPlayer(ip)))
 		    {
 		        p->recv(buff);
 		    }
-			else */
+			else
 				buff = socket->recv(100, &ip);
 			socket->send("salut", ip, CLIENT_PORT);
 		    if (buff == WELCOME_MSG)
