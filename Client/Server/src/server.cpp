@@ -59,14 +59,12 @@ void		Server::run()
 		running = true;
 		while (running == true)
 		{
-			cout << ip << endl;
 			buff = socket->recv(100, &ip);
-			cout << ip << endl;
 			p = this->findPlayer(ip);
 		    if (p)
 		    {
-				Logger::Instance()->log(0, "client already connected\n");
-		        p->recv(buff);
+				Logger::Instance()->log(0, "client already connected, exiting...\n");
+				buff = "";
 		    }
 			socket->send("salut", ip, CLIENT_PORT);
 		    if (buff == WELCOME_MSG)
