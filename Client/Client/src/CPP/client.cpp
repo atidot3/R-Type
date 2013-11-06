@@ -21,6 +21,11 @@ void		Client::stop()
 {
     running = false;
 }
+
+void		Client::update()
+{
+
+}
 /*
  Client::PlayerList& Client::getPlayers()
 {
@@ -42,8 +47,8 @@ void		Client::run()
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
 	ip = "127.0.0.1";
-	//    Player* p;
-
+	Player* c;
+	c = new Player();
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
     try
@@ -57,6 +62,7 @@ void		Client::run()
 		    {
 		        cout << "New client " << ip << endl;
 		    }
+			system("PAUSE");
 		}
 	}
 	catch (std::exception *e)
