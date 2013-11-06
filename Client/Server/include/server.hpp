@@ -9,7 +9,7 @@
 #include "player.hpp"
 #include "sockets/iSocket.hpp"
 
-#define WELCOME_MSG "salut"
+#define WELCOME "salut"
 using namespace std;
 
 class Server

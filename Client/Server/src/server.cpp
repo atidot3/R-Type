@@ -67,7 +67,7 @@ void		Server::run()
 				buff = "";
 		    }
 			socket->send("salut", ip, CLIENT_PORT);
-		    if (buff == WELCOME_MSG)
+		    if (buff == WELCOME)
 		    {
 		        cout << "New client " << ip << endl;
 		        if (!game)

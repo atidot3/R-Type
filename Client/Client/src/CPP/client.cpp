@@ -58,7 +58,7 @@ void		Client::run()
 		{
 			socket->send("salut", ip, SERVER_PORT);
 		    buff = socket->recv(100, &ip);
-		    if (buff == WELCOME_MSG)
+		    if (buff == WELCOME)
 		    {
 		        cout << "New client " << ip << endl;
 		    }

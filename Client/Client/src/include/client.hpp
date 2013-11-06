@@ -7,7 +7,7 @@
 #include <Windows.h>
 #include "iSocket.hpp"
 
-#define WELCOME_MSG "salut"
+#define WELCOME "salut"
 using namespace std;
 
 class Client
