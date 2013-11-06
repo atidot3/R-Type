@@ -7,6 +7,7 @@
 #include "player.hpp"
 #include "bullet.hpp"
 #include "server.hpp"
+#include "threads\iThread.hpp"
 
 Game::Game(Server* server) : server(server)
 {

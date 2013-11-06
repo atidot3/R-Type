@@ -21,7 +21,7 @@ class Server;
 class Game : public Identifiable
 {
 public:
-    //typedef list<Monster*> MonsterList;
+    typedef list<Monster*> MonsterList;
     //typedef list<Rocket*>  RocketList;
     //typedef list<Bullet*>  BulletList;
     typedef list<Player*>	PlayerList;
@@ -36,7 +36,7 @@ public:
 	void 		removePlayer(Player*);
 	float		loadingBlock() const;
 	void		sendAll(string& data) const; // send data to all players
-	//Monster*    findMonster(int id);
+	Monster*    findMonster(int id);
 	//Rocket*     findRocket(int id);
 	Player*     findPlayer(int id);
     //Bullet*     findBullet(int id);
@@ -59,8 +59,8 @@ private:
     int         life; // players life (when 0, restart at the level begining)
     int         score; // game total score
     //Level       *level; // current game level
-    //MonsterList monsters; // visible monsters on screen
-    //IThread*    thread;
+    MonsterList monsters; // visible monsters on screen
+    IThread*    thread;
 	PlayerList	players;
 	//RocketList  rockets;
 	//BulletList  bullets;

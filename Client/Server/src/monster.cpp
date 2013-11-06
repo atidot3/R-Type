@@ -22,7 +22,7 @@ void		Monster::sendMovePacket()
 {
 }
 
-void                Monster::update(float time)
+void        Monster::update(float time)
 {
 }
 
@@ -32,22 +32,22 @@ const MonsterType*  Monster::getType() const
     return (type);
 }
 
-void                Monster::setHp(int hp)
+void		Monster::setHp(int hp)
 {
     this->hp = hp;
 }
 
-Vertex<int>			Monster::getPos() const
+Vertex<int>	Monster::getPos() const
 {
 	return (Vertex<int>(pos));
 }
 
-int                 Monster::getHp() const
+int			Monster::getHp() const
 {
     return (hp);
 }
 
-Seconds             Monster::getTime() const
+Seconds		Monster::getTime() const
 {
     return time;
 }
