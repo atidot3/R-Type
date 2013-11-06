@@ -39,7 +39,7 @@ public:
     }
 };
 
-#ifdef WIN32
+#ifdef _WIN32
     #include "sockets/socketWindows.hpp"
 #else
     #include <sys/types.h>

@@ -7,8 +7,6 @@
 #include "log.hpp"
 #include "game.hpp"
 #include "player.hpp"
-#include <winsock2.h>
-#include <Windows.h>
 #include "sockets/iSocket.hpp"
 
 #define WELCOME_MSG "salut"

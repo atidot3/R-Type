@@ -34,7 +34,7 @@ private:
   IMutex&  _mutex;
 };
 
-#ifdef WIN32
+#ifdef _WIN32
   #include "threads/threadWindows.hpp"
 #else
   #include "threads/threadUnix.hpp"

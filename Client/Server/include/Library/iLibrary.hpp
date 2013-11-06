@@ -20,7 +20,7 @@ public:
     virtual voidFuncPtr      getVoidSym(const string &name) = 0;
 };
 
-#ifdef WIN32
+#ifdef _WIN32
   #include "libraryWindows.hpp"
 #else
   #include "libraryUnix.hpp"

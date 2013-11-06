@@ -6,6 +6,13 @@
 #include "player.hpp"
 #include "server.hpp"
 #include "identifiable.hpp"
+#include "threads\iThread.hpp"
+#include "monster.hpp"
+#include "level.hpp"
+#include "spawn.hpp"
+#include "monsterType.hpp"
+#include "math/time.hpp"
+#include "bullet.hpp"
 
 #define MAX_PLAYERS 4
 
@@ -60,7 +67,7 @@ private:
     int         score; // game total score
     //Level       *level; // current game level
     MonsterList monsters; // visible monsters on screen
-    //IThread*    thread;
+    IThread*    thread;
 	PlayerList	players;
 	//RocketList  rockets;
 	//BulletList  bullets;

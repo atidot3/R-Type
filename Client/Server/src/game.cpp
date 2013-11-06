@@ -1,13 +1,4 @@
 #include "game.hpp"
-#include "monster.hpp"
-#include "level.hpp"
-#include "spawn.hpp"
-#include "monsterType.hpp"
-#include "math/time.hpp"
-#include "player.hpp"
-#include "bullet.hpp"
-#include "server.hpp"
-#include "threads\iThread.hpp"
 
 Game::Game(Server* server) : server(server)
 {
@@ -77,8 +68,6 @@ int		Game::addPlayer(Player* p)
 		if (referee == NULL)
 			referee = p;
 		players.push_back(p);
-
-        // Send map info
 		sendMapInfo();
 		return (players.size());
 	}
@@ -93,7 +82,7 @@ void 	Game::removePlayer(Player* p)
 		delete this;
 	if (referee == p)
 		referee = players.front();
-	// Notify user deco
+	cout << "User have been disconnected" << endl;
 }
 
 void	Game::sendAll(string& data) const
@@ -133,7 +122,7 @@ void        Game::addPoints(int pts)
 
 float		Game::loadingBlock() const
 {
-	return ((float)pos / (float)blockSize + 10); // Anticipative loading
+	return ((float)pos / (float)blockSize + 10);
 }
 
 Player*    Game::findPlayer(int id)
