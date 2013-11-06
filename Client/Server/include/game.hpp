@@ -60,7 +60,7 @@ private:
     int         score; // game total score
     //Level       *level; // current game level
     MonsterList monsters; // visible monsters on screen
-    IThread*    thread;
+    //IThread*    thread;
 	PlayerList	players;
 	//RocketList  rockets;
 	//BulletList  bullets;
