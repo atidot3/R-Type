@@ -20,15 +20,16 @@ Server::~Server()
 
 Player*     findPlayer(string& ip)
 {
-	/*PlayerList::iterator pl, plEnd; 
-	plEnd = players.end();
-	pl = players.begin();
+	list<Player*>	playerss;
+	list<Player*>::iterator pl, plEnd; 
+	plEnd = playerss.end();
+	pl = playerss.begin();
 	while (pl != plEnd)
 	{
 		if ((*pl)->getIp() == ip)
             return (*pl);
 		++pl;
-	}*/
+	}
     return (NULL);
 }
 
@@ -60,11 +61,12 @@ void		Server::run()
 		running = true;
 		while (running == true)
 		{
-		    /*if ((p = findPlayer(ip)))
+		    if ((p = this->findPlayer(ip)))
 		    {
 		        p->recv(buff);
-		    }*/
-			buff = socket->recv(100, &ip);
+		    }
+			else
+				buff = socket->recv(100, &ip);
 			socket->send("salut", ip, CLIENT_PORT);
 		    if (buff == WELCOME_MSG)
 		    {
