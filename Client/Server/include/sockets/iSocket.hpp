@@ -4,8 +4,8 @@
 #include "sockets/socketException.hpp"
 #include "log.hpp"
 
-#define SERVER_PORT 2468
-#define CLIENT_PORT 2469
+#define SERVER_PORT 4242
+#define CLIENT_PORT 4243
 
 class ISocket
 {
