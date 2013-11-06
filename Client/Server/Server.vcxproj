@@ -102,12 +102,13 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\Library;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\math;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\sockets;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\Library;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include;E:\Epitech\RTYPE\R-Type\Client\Server\threads;E:\Epitech\RTYPE\R-Type\Client\Server\filesystem;E:\Epitech\RTYPE\R-Type\Client\Server\sockets;E:\Epitech\RTYPE\R-Type\Client\Server\math;E:\Epitech\RTYPE\R-Type\Client\Server\Library;E:\Epitech\RTYPE\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Documents\GitHub\R-Type\Client\Server\include\Library;E:\Documents\GitHub\R-Type\SFML\SFML-2.1\include;E:\Documents\GitHub\R-Type\Client\Server\include\threads;E:\Documents\GitHub\R-Type\Client\Server\include\sockets;E:\Documents\GitHub\R-Type\Client\Server\include\math;E:\Documents\GitHub\R-Type\Client\Server\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\Library;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\math;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\sockets;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\Library;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include;E:\Epitech\RTYPE\R-Type\Client\Server\threads;E:\Epitech\RTYPE\R-Type\Client\Server\filesystem;E:\Epitech\RTYPE\R-Type\Client\Server\sockets;E:\Epitech\RTYPE\R-Type\Client\Server\math;E:\Epitech\RTYPE\R-Type\Client\Server\Library;E:\Epitech\RTYPE\R-Type\Client\Server\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>E:\Documents\GitHub\R-Type\SFML\SFML-2.1\lib;E:\Documents\GitHub\R-Type\Client\Server\include\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
