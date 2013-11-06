@@ -1,3 +1,0 @@
-Fatal - Oct 25 2013 17:25:40 | ----------------Client Initialized-------------
-
-Fatal - Oct 25 2013 17:25:40 | Exit with code 0

@@ -1,3 +1,0 @@
-Debug - Oct 25 2013 15:52:26 | ----------------Client Initialized-------------
-
-Warning - Oct 25 2013 15:52:26 | Exit with code 0
