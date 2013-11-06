@@ -3,12 +3,11 @@
 
 #include "math\vertex.hpp";
 
-// Entity abstract class for 2D movements
 using std::string;
 class Entity
 {
 public:
-    string      netPosition() const; // get position formated packet
+    string      netPosition() const;
     void        setPos(Vertex<float>);
     void        setSpeed(Vertex<float>);
     const Vertex<float>& getPos() const;
