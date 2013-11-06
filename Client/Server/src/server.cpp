@@ -50,11 +50,11 @@ Game*&      Server::getCurrentGame()
 
 void		Server::run()
 {
-	Logger::Instance()->open("Server.txt");
 	string	buff, ip;
     Player* p;
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
+	Logger::Instance()->log(0, "----------------Server Starting...-------------\n");
     try
 	{
 		running = true;
@@ -64,16 +64,19 @@ void		Server::run()
 			p = this->findPlayer(ip);
 		    if (p)
 		    {
+				Logger::Instance()->log(1, "client already connected\n");
 		        p->recv(buff);
 		    }
 			socket->send("salut", ip, CLIENT_PORT);
 		    if (buff == WELCOME_MSG)
 		    {
 		        cout << "New client " << ip << endl;
+				Logger::Instance()->log(0, "New client\n");
 		        if (!game)
 		            game = new Game(this);
 		        if (game->started() || game->getPlayers().size() >= MAX_PLAYERS)
 		        {
+					Logger::Instance()->log(0, "new Game\n");
 		            game = new Game(this);
 		        }
 		        cout << "Added to game " << game->getId() << endl;
