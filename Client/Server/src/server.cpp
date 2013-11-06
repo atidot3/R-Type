@@ -75,7 +75,6 @@ void		Server::run()
 		            game = new Game(this);
 		        if (game->started() || game->getPlayers().size() >= MAX_PLAYERS)
 		        {
-		            // New game
 		            game = new Game(this);
 		        }
 		        cout << "Added to game " << game->getId() << endl;
