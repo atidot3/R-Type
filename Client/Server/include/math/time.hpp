@@ -2,11 +2,11 @@
 #define TIME
 
 const float BLOCKS_PER_SECOND = 1;
-const float SECONDS_PER_BLOCK = 1 / BLOCKS_PER_SECOND;
+const float GameTime_PER_BLOCK = 1 / BLOCKS_PER_SECOND;
 
 double                  now();
-void                    sleep(int len); // miliseconds
+void                    sleep(int len); // miliGameTime
 
-typedef	double			Seconds;
+typedef	double			GameTime;
 
 #endif // TIME

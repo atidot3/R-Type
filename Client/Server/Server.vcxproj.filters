@@ -69,9 +69,6 @@
     <ClCompile Include="src\monster.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="src\monsterType.cpp">
-      <Filter>Source Files\src</Filter>
-    </ClCompile>
     <ClCompile Include="src\player.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
@@ -108,6 +105,9 @@
     <ClCompile Include="src\threads\threadWindows.cpp">
       <Filter>Source Files\src\threads</Filter>
     </ClCompile>
+    <ClCompile Include="src\monsterGest.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Library\iLibrary.hpp">
@@ -135,9 +135,6 @@
       <Filter>Source Files\include</Filter>
     </ClInclude>
     <ClInclude Include="include\monster.hpp">
-      <Filter>Source Files\include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\monsterType.hpp">
       <Filter>Source Files\include</Filter>
     </ClInclude>
     <ClInclude Include="include\player.hpp">
@@ -181,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="include\threads\threadWindows.hpp">
       <Filter>Source Files\include\threads</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monsterGest.hpp">
+      <Filter>Source Files\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

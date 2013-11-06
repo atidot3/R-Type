@@ -8,16 +8,16 @@ LARGE_INTEGER GetFrequency()
   return freq;
 }
 
-Seconds  now()
+GameTime  now()
 {
 
 
   LARGE_INTEGER tick, freq;
-  Seconds res;
+  GameTime res;
 
   freq = GetFrequency();
   QueryPerformanceCounter(&tick);
-  res = (Seconds)tick.QuadPart / (Seconds)freq.QuadPart;
+  res = (GameTime)tick.QuadPart / (GameTime)freq.QuadPart;
   return res;
 }
 

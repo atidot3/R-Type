@@ -4,35 +4,35 @@
 #include <string>
 #include "math/vertex.hpp"
 #include "math/time.hpp"
-//#include "sockets/iSocket.hpp"
 #include "identifiable.hpp"
 #include "entity.hpp"
 
-#define	DIE				0x05;
+#define	DIE					0x05;
 #define	MOVE_PACKET			0x03;
-#define PLAYER_ALIVE	5
+#define PLAYER_ALIVE		5
 
 using namespace std;
 
 class Game;
-class MonsterType;
+class monsterGest;
 class Spawn;
+class ISocket;
 
 class Player : public Identifiable, public Entity
 {
 public:
 	Player(Game* game, string ip);
 	~Player();
-	void		send(string data); // send data to graphic terminal
-	void		recv(string& data); // callback on data receive
-    void        update(Seconds); // update player's position
+	void		send(string data);
+	void		recv(string& data);
+    void        update(GameTime);
     char        getColor() const;
     bool	    stuck() const;
     void        die();
     bool        isAlive() const;
-    Seconds     getAliveTime() const;
+    GameTime     getAliveTime() const;
     string      getIp() const;
-    void        init(); // called when the game start
+    void        init();
     void        sendMovePacket() const;
     void        checkBounds();
 
@@ -42,9 +42,12 @@ private:
 	bool        _isAlive;
 	Game*		game;
 	char        life;
-	//ISocket*	socket;
 	string		ip;
-    Seconds     begin, charge, alive, lastDeath;
+    GameTime    begin;
+	GameTime	charge;
+	GameTime	alive;
+	GameTime	lastDeath;
+	ISocket*	socket;
 };
 
 #endif // PLAYER
