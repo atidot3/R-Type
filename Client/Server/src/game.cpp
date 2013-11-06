@@ -12,6 +12,8 @@ Game::Game(Server* server) : server(server)
 Game::~Game()
 {
     cout << "Destroying game " << getId() << endl;
+    if (thread)
+    	delete thread;
  	Player *pl;
 	while (players.size() > 0)
 	{
@@ -20,6 +22,11 @@ Game::~Game()
 		server->getPlayers().remove(pl);
 		players.pop_front();
 	}
+    while (monsters.size() > 0)
+    {
+        delete monsters.front();
+        monsters.pop_front();
+    }
     server->getCurrentGame() = NULL;
 }
 
@@ -33,6 +40,8 @@ void	Game::start()
     last = 0;
     pos = 0;
     endTime = -1;
+    if (!thread)
+        thread = new AbstractThread(threadFunc, (void*) this);
     PlayerList::iterator pl, plEnd = players.end();
 	for (pl = players.begin(); pl != plEnd; ++pl)
 	{
@@ -153,5 +162,28 @@ Player*     Game::getReferee() const
 
 int     threadFunc(void *data)
 {
+    Game*   game = static_cast<Game*>(data);
+
+    while (true)
+    {
+        game->run();
+        if (game->getPlayers().size() > 0)
+            if (game->gameOver())
+            {
+                cout << "Game Over " << game->getId() << endl;
+                string  t;
+                t += "over";
+                game->sendAll(t);
+                break;
+            }
+            else
+            {
+                if (!game->nextLevel())
+                    break;
+            }
+        else
+            break;
+    }
+    delete game;
     return (0);
 }

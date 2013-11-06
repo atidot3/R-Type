@@ -1,5 +1,6 @@
 #ifndef GAME
 # define GAME
+
 #include <string>
 #include <list>
 #include <math.h>
@@ -10,7 +11,7 @@
 #include "monster.hpp"
 #include "level.hpp"
 #include "spawn.hpp"
-#include "monsterType.hpp"
+#include "monsterGest.hpp"
 #include "math/time.hpp"
 #include "bullet.hpp"
 
@@ -42,15 +43,15 @@ public:
 	int 		addPlayer(Player*);
 	void 		removePlayer(Player*);
 	float		loadingBlock() const;
-	void		sendAll(string& data) const; // send data to all players
+	void		sendAll(string& data) const;
 	Monster*    findMonster(int id);
 	//Rocket*     findRocket(int id);
 	Player*     findPlayer(int id);
     //Bullet*     findBullet(int id);
     void        addPoints(int pts);
     bool        nextLevel();
-    int         pixPos() const; // Get pix position
-    void        sendMapInfo() const; // send map info to players
+    int         pixPos() const;
+    void        sendMapInfo() const;
     bool        gameOver() const;
     //BulletList& getBullets();
     PlayerList& getPlayers();
@@ -58,15 +59,15 @@ public:
     float       getTime() const;
     Player*     getReferee() const;
 private:
-	int         pos; // game position (in pixels)
-    Seconds     time; // game position (in seconds)
-    Seconds     begin; // game start (in seconds)
-    Seconds     last; // last frame (in seconds)
-    Seconds     endTime; // Level end time (used for tempo)
-    int         life; // players life (when 0, restart at the level begining)
-    int         score; // game total score
-    //Level       *level; // current game level
-    MonsterList monsters; // visible monsters on screen
+	int         pos;
+    GameTime     time;
+    GameTime     begin;
+    GameTime     last;
+    GameTime     endTime;
+    int         life;
+    int         score;
+    //Level       *level;
+    MonsterList monsters;
     IThread*    thread;
 	PlayerList	players;
 	//RocketList  rockets;
@@ -74,6 +75,8 @@ private:
 	Player*		referee;
     Server*	server;
 };
+
+int     threadFunc(void *data);
 
 #endif // GAME
 

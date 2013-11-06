@@ -2,7 +2,7 @@
 #define TIME
 
 const float BLOCKS_PER_SECOND = 1;
-const float GameTime_PER_BLOCK = 1 / BLOCKS_PER_SECOND;
+const float GAMETIME_PER_BLOCK = 1 / BLOCKS_PER_SECOND;
 
 double                  now();
 void                    sleep(int len); // miliGameTime
