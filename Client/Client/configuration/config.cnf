@@ -1,5 +1,5 @@
-ip=		127.0.0.1
-port=	4242
+ip=		10.12.181.63
+port=	4243
 player_name=	coincoin
 player_life=	1
 errorMessage = canard fail

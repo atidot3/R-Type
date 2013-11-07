@@ -1,4 +1,5 @@
 #include "player_client.hpp"
+#include "client.hpp"
 #include <stdio.h>
 #include <list>
 #include <iostream>

@@ -10,6 +10,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include "player_client.hpp"
 
 #define WELCOME "salut"
 using namespace std;
@@ -23,15 +24,13 @@ public:
 	void		run();
 	void		stop();
 	void		update();
-//	Player*     findPlayer(string& ip);
-//	PlayerList& getPlayers();
-//	Game*&      getCurrentGame();
 
 private:
 	ISocket		*socket;
 	bool		running;
-	int             ports;
-int				player_life;
+	int         ports;
+	int			player_life;
+	string			adresse;
 string			ips;
 string			player_name;
 string          errorMessage;
