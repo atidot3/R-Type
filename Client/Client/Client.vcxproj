@@ -49,16 +49,21 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>E:\Epitech\R-Type\SFML\SFML-2.1\include;E:\Epitech\R-Type\Client\Server\include\threads;E:\Epitech\R-Type\Client\Server\include\sockets;E:\Epitech\R-Type\Client\Server\include\math;E:\Epitech\R-Type\Client\Server\include\Library;E:\Epitech\R-Type\Client\Server\include;E:\Epitech\R-Type\Client\Client\src\include;E:\Documents\GitHub\R-Type\SFML\SFML-2.1\include;E:\Documents\GitHub\R-Type\Client\Client\src\include;E:\Documents\GitHub\R-Type\Client\Server\include\threads;E:\Documents\GitHub\R-Type\Client\Server\include\sockets;E:\Documents\GitHub\R-Type\Client\Server\include\math;E:\Documents\GitHub\R-Type\Client\Server\include\Library;E:\Documents\GitHub\R-Type\Client\Server\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\threads;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\sockets;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\math;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include\Library;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Server\include;C:\Users\benjamin\Documents\GitHub\R-Type\Client\Client\src\include;C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Server\include;C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Server\include\sockets;C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Server\include\math;C:\Users\lapier_j.lapier_j-PC\Documents\GitHub\R-Type\Client\Client\src\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Client\src\include;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\math;C:\Users\entrin_a\Desktop\R-Type\R-Type\Client\Server\include\sockets;E:\Epitech\R-Type\Client\Client\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\SFML\SFML-2.1\include;$(SolutionDir)\Server\include\threads;$(SolutionDir)\Server\include\sockets;$(SolutionDir)\Server\include\math;$(SolutionDir)\Server\include\Library;$(SolutionDir)\Server\include;$(SolutionDir)\Client\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>E:\Epitech\R-Type\SFML\SFML-2.1\lib;E:\Documents\GitHub\R-Type\SFML\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\SFML\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-main-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
