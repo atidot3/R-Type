@@ -8,6 +8,7 @@ Player::Player()
 {
 	posx = 1;
 	posy = 1;
+	system("PAUSE");
 }
 
 Player::~Player()

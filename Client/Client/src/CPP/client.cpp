@@ -39,27 +39,33 @@ void		Client::update()
 
 }
 
+void	Client::getupdate()
+{
+
+}
+
+string		Client::getIP()
+{
+
+}
 void		Client::run()
 {
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
 	Player* c;
-	c = new Player();
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
     try
 	{
 		running = true;
-		while (running == true)
-		{
 			socket->send("salut", adresse, SERVER_PORT);
 		    buff = socket->recv(100, &adresse);
 		    if (buff == WELCOME)
 		    {
 		        cout << "New client " << adresse << endl;
+				Logger::Instance()->log(0, "Connected\n");
+				c = new Player();
 		    }
-			system("PAUSE");
-		}
 	}
 	catch (std::exception *e)
 	{
