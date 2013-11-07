@@ -7,17 +7,21 @@ Client::Client(int port) : running(false)
 {
 Configuration   config;
 int             ports;
+int				player_life;
 string			ips;
+string			player_name;
 string          errorMessage;
 
 config.Load(PATH_CONFIG);
 
- if (config.Get("adresseip", ips)    &&
+ if (config.Get("ip", ips)    &&
     config.Get("port", ports)    &&
+	config.Get("player_name", player_name)    &&
+	config.Get("player_life", player_life)    &&
     config.Get("errorMessage", errorMessage))
 	{
-//    cout << "votre ip est :" << ip << endl << "votre port est: " << ports << endl;
-		cout << "parametre chargé" << endl;
+    cout << "votre ip est :" << ips << endl << "votre port est: " << ports << endl;
+//		cout << "parametre chargé" << endl;
 	}
 else
 	{

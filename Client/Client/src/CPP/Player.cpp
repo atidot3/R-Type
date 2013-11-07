@@ -5,7 +5,6 @@
 
 Player::Player()
 {
-	std::cout << "New player :) " << std::endl;
 	posx = 1;
 	posy = 1;
 }
