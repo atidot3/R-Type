@@ -1,13 +1,15 @@
 #ifndef PLAYER
 # define PLAYER
 
-#include "player_client.hpp"
+#include <string>
 
 class Player
 {
 public:
 	Player();
 	~Player();
+	void		send_socket();
+	void		recv_socket();
 
 private:
 
