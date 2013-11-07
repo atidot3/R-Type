@@ -15,6 +15,7 @@ public:
     bool Contains(const string& key) const;
     bool Get(const string& key, string& value) const;
     bool Get(const string& key, int&    value) const;
+	void Show();
 	Configuration();
 	~Configuration();
 

@@ -16,7 +16,6 @@ config.Load(PATH_CONFIG);
     config.Get("errorMessage", errorMessage))
 	{
     cout << "votre ip est :" << ips << endl << "votre port est: " << ports << endl;
-//		cout << "parametre chargé" << endl;
 	}
 else
 	{

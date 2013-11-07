@@ -27,8 +27,6 @@ bool Configuration::Load(const string& file)
     {
         string line;
         getline(inFile, line);
-
-        // filter out comments
         if (!line.empty())
         {
             int pos = line.find('#');
@@ -38,8 +36,6 @@ bool Configuration::Load(const string& file)
                 line = line.substr(0, pos);
             }
         }
-
-        // split line into key and value
         if (!line.empty())
         {
             int pos = line.find('=');
@@ -78,6 +74,17 @@ bool Configuration::Get(const string& key, string& value) const
     {
         return false;
     }
+}
+
+void	Configuration::Show()
+{
+	map<string,string>::const_iterator iter = data.begin();
+
+	while(iter != data.end())
+	{
+		//surcharge iterator à faire
+		iter++;
+	}
 }
 
 bool Configuration::Get(const string& key, int& value) const
