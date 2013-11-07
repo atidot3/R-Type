@@ -1,9 +1,28 @@
 #include "client.hpp"
+#include "config.hpp"
 #include "time.h"
 #include "stdlib.h"
 
 Client::Client(int port) : running(false)
 {
+Configuration   config;
+int             ports;
+string			ips;
+string          errorMessage;
+
+config.Load(PATH_CONFIG);
+
+ if (config.Get("adresseip", ips)    &&
+    config.Get("port", ports)    &&
+    config.Get("errorMessage", errorMessage))
+	{
+//    cout << "votre ip est :" << ip << endl << "votre port est: " << ports << endl;
+		cout << "parametre chargé" << endl;
+	}
+else
+	{
+	  cout << "Missing parameter in configuration file." << endl;
+	}
 	socket = new AbstractSocket(port);
 }
 

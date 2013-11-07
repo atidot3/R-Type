@@ -39,6 +39,9 @@
     <ClCompile Include="src\CPP\Player.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="src\CPP\config.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\include\log.hpp">
@@ -48,6 +51,9 @@
       <Filter>Source Files\include</Filter>
     </ClInclude>
     <ClInclude Include="src\include\player_client.hpp">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\config.hpp">
       <Filter>Source Files\include</Filter>
     </ClInclude>
   </ItemGroup>

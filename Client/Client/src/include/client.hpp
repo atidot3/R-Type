@@ -6,6 +6,12 @@
 #include <winsock2.h>
 #include <Windows.h>
 #include "iSocket.hpp"
+#include <map>
+#include <string>
+#include <fstream>
+#include <iostream>
+
+
 
 #define WELCOME "salut"
 using namespace std;
