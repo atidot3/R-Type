@@ -44,9 +44,9 @@ void	Client::getupdate()
 
 }
 
-string		Client::getIP()
+void		Client::getIP()
 {
-
+	return;
 }
 void		Client::run()
 {

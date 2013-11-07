@@ -24,7 +24,7 @@ public:
 	void		run();
 	void		stop();
 	void		update();
-	string		getIP();
+	void		getIP();
 	void		getupdate();
 	void		send(string data);
 	void		recv(string& data);
