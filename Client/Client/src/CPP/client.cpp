@@ -6,11 +6,6 @@
 Client::Client(int port) : running(false)
 {
 Configuration   config;
-int             ports;
-int				player_life;
-string			ips;
-string			player_name;
-string          errorMessage;
 
 config.Load(PATH_CONFIG);
 

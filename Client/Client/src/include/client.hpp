@@ -11,8 +11,6 @@
 #include <fstream>
 #include <iostream>
 
-
-
 #define WELCOME "salut"
 using namespace std;
 
@@ -32,4 +30,9 @@ public:
 private:
 	ISocket		*socket;
 	bool		running;
+	int             ports;
+int				player_life;
+string			ips;
+string			player_name;
+string          errorMessage;
 };
