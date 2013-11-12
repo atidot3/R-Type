@@ -80,12 +80,12 @@ void		Client::run()
     }
 }
 
-bool	Client::recv_socket(string &data)
+bool	Client::recv_socket(string &data) const
 {
 	return (true);
 }
 
-bool	Client::send_socket(string &data)
+bool	Client::send_socket(string &data) const
 {
 	return (true);
 }

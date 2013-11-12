@@ -24,10 +24,10 @@ public:
 	void		update();
 	void		getIP();
 	void		getupdate();
-	void		send(string data);
-	void		recv(string& data);
-	bool		send_socket(string &data);
-	bool		recv_socket(string &data);
+	void		send(string data) const;
+	void		recv(string& data) const;
+	bool		send_socket(string &data) const;
+	bool		recv_socket(string &data) const;
 
 private:
 	ISocket		*socket;
@@ -38,6 +38,7 @@ private:
 	string		ips;
 	string		player_name;
 	string      errorMessage;
+	string		data;
 	int			posx;
 	int			posy;
 	int			life;
