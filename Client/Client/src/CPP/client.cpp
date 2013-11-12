@@ -1,7 +1,6 @@
 #include "client.hpp"
 #include "config.hpp"
 #include "time.h"
-#include "stdlib.h"
 
 Client::Client(int port) : running(false)
 {
@@ -96,12 +95,12 @@ bool	Client::send_socket(string &data) const
 
 void	Client::parser(string &data) const
 {
-    int totalMessages = sizeof(Type)/4; //nombre objet +1
-    for (int i = 0; i < totalMessages; i++)
+    int totalItem = sizeof(Type)/4; //nombre objet +1
+    for (int i = 0; i < totalItem; i++)
 	{
 		if (data == Type[i])
 		{
-			printf ("[%s] detected\n", Type[i]);
+			cout << Type[i] << "ok" << endl;
 			// recuperer les param
 		return;
 		}
