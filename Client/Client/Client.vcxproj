@@ -15,7 +15,6 @@
     <ClCompile Include="src\CPP\config.cpp" />
     <ClCompile Include="src\CPP\log.cpp" />
     <ClCompile Include="src\CPP\main_client.cpp" />
-    <ClCompile Include="src\CPP\Player.cpp" />
     <ClCompile Include="src\CPP\socketException.cpp" />
     <ClCompile Include="src\CPP\socketWindows.cpp" />
   </ItemGroup>
@@ -23,7 +22,6 @@
     <ClInclude Include="src\include\client.hpp" />
     <ClInclude Include="src\include\config.hpp" />
     <ClInclude Include="src\include\log.hpp" />
-    <ClInclude Include="src\include\player_client.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{79BBF9AB-EE6D-4205-9D9C-AEE884BDAC19}</ProjectGuid>

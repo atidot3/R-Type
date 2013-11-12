@@ -52,7 +52,6 @@ void		Client::run()
 {
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
-	Player* c;
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
     try
@@ -64,7 +63,13 @@ void		Client::run()
 		    {
 		        cout << "New client " << adresse << endl;
 				Logger::Instance()->log(0, "Connected\n");
-				c = new Player();
+				_isAlive = true;
+				posx = 1;
+				posy = 1;
+				while (_isAlive == true)
+				{
+					system("PAUSE");
+				}
 		    }
 	}
 	catch (std::exception *e)
@@ -73,4 +78,14 @@ void		Client::run()
         delete e;
         Sleep(20000);
     }
+}
+
+bool	Client::recv_socket(string &data)
+{
+	return (true);
+}
+
+bool	Client::send_socket(string &data)
+{
+	return (true);
 }
