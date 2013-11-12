@@ -79,6 +79,8 @@ void		Server::run()
 		        cout << "Added to game " << game->getId() << endl;
 		        p = new Player(game, ip);
 		        players.push_back(p);
+				// TEST PARSER DICTIONNAIRE //
+				socket->send("coincoin", ip, CLIENT_PORT);
 		    }
 		}
 	}

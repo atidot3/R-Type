@@ -68,6 +68,7 @@ void		Client::run()
 				posy = 1;
 				while (_isAlive == true)
 				{
+					recv_socket(data);
 					system("PAUSE");
 				}
 		    }
@@ -80,12 +81,29 @@ void		Client::run()
     }
 }
 
-bool	Client::recv_socket(string &data) const
+bool	Client::recv_socket(string &data)
 {
+	data = socket->recv(100, &adresse);
+	cout << "data: " << data << endl;
+	parser(data);
 	return (true);
 }
 
 bool	Client::send_socket(string &data) const
 {
 	return (true);
+}
+
+void	Client::parser(string &data) const
+{
+    int totalMessages = sizeof(Type)/4; //nombre objet -1
+    for (int i = 0; i < totalMessages; i++)
+	{
+		if (data == Type[i])
+		{
+			printf ("[%s]\n", Type[i]);
+			break;
+		}
+	}
+	cout << ERROR_INSTRUCTION;
 }

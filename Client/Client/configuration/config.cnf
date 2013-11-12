@@ -1,10 +1,12 @@
+# L'ip doit être celle du client
 #epitech ben
 #ip=		10.12.181.16
 #home ben
+#benoit
 #ip=			88.161.252.7
 #localhost
-#ip= 127.0.0.1
-ip= 10.12.181.92
+ip= 127.0.0.1
+#ip= 10.12.181.92
 port=	4243
 player_name=	coincoin
 player_life=	1
