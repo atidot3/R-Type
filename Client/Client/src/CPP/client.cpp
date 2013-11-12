@@ -100,7 +100,7 @@ void	Client::parser(string &data) const
 	{
 		if (data == Type[i])
 		{
-			cout << Type[i] << "ok" << endl;
+			cout << Type[i] << " ok" << endl;
 			// recuperer les param
 		return;
 		}
