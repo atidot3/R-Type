@@ -16,6 +16,7 @@
                                        ITEM(player), \
                                        ITEM(weapon), \
                                        ITEM(mob)
+#define NBR_ITEM 4 //nombre d'item dans MESSAGE_LIST +1
 #define GET_LIST__ITEM(msg)   _##msg##_
 #define GET_LIST_SRTING_ITEM(msg)  #msg
 enum MessagesEnum
@@ -28,14 +29,6 @@ static const char* Type[] =
 };
 
 using namespace std;
-
-enum DictionnaireType
-{
-	SHIP = 0,
-	WEAPONS = 1,
-	GOODS = 403,
-	BADS = 404
-};
 
 class Client
 {

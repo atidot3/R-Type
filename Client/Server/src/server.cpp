@@ -80,7 +80,14 @@ void		Server::run()
 		        p = new Player(game, ip);
 		        players.push_back(p);
 				// TEST PARSER DICTIONNAIRE //
-				socket->send("coincoin", ip, CLIENT_PORT);
+				cout << "Debut du test"<< endl;
+				socket->send("weapon", ip, CLIENT_PORT);
+				system("PAUSE");
+				socket->send("player", ip, CLIENT_PORT);				
+				system("PAUSE");
+				socket->send("mob", ip, CLIENT_PORT);
+				cout << "Fin du test" << endl;
+				//TEST PARSER DICTIONNAIRE //
 		    }
 		}
 	}
