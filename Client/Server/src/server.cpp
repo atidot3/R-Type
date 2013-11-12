@@ -50,6 +50,7 @@ Game*&      Server::getCurrentGame()
 void		Server::run()
 {
 	string	buff, ip;
+	string data = "weapon";
     Player* p;
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
@@ -79,15 +80,10 @@ void		Server::run()
 		        cout << "Added to game " << game->getId() << endl;
 		        p = new Player(game, ip);
 		        players.push_back(p);
-		/*		// TEST PARSER DICTIONNAIRE //
-				cout << "Debut du test"<< endl;
-				socket->send("weapon", ip, CLIENT_PORT);
-				system("PAUSE");
-				socket->send("player", ip, CLIENT_PORT);				
-				system("PAUSE");
-				socket->send("mob", ip, CLIENT_PORT);
-				cout << "Fin du test" << endl;
-				//TEST PARSER DICTIONNAIRE // */
+				game->sendAll(data);
+				// TEST PARSER DICTIONNAIRE //
+				game->sendAll(data);
+				//TEST PARSER DICTIONNAIRE //
 		    }
 		}
 	}

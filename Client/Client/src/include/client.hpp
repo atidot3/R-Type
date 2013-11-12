@@ -11,6 +11,8 @@
 #include <iostream>
 
 #define WELCOME "salut"
+#define SUCCESS	1
+#define FAILURE	-1
 #define ERROR_INSTRUCTION "Bad Instruction\n"
 #define MESSAGE_LIST(ITEM)                          \
                                        ITEM(player), \

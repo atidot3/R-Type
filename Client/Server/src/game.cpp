@@ -97,11 +97,11 @@ void 	Game::removePlayer(Player* p)
 void	Game::sendAll(string& data) const
 {
 	// TEST //
-	string data2 = "player";
+//	string data2 = "player";
  	PlayerList::const_iterator pl, plEnd = players.end();
 	for (pl = players.begin(); pl != plEnd; ++pl)
 	{
-		(*pl)->send(data2);
+		(*pl)->send(data);
 	}
 }
 

@@ -1,4 +1,4 @@
-# L'ip doit être celle du client
+# L'ip doit être celle du serveur
 #epitech ben
 #ip=		10.12.181.16
 #home ben
@@ -11,4 +11,3 @@ port=	4243
 player_name=	coincoin
 player_life=	1
 errorMessage = canard fail
-#errorMessage = canard fail

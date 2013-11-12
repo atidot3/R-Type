@@ -69,7 +69,6 @@ void		Client::run()
 				while (running == true)
 				{
 					recv_socket(data);
-					system("PAUSE");
 				}
 		    }
 	}
@@ -90,6 +89,8 @@ bool	Client::recv_socket(string &data)
 
 bool	Client::send_socket(string &data) const
 {
+	string buffer;
+	socket->send(data, adresse, SERVER_PORT);
 	return (true);
 }
 
