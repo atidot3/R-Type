@@ -15,6 +15,7 @@
     <ClCompile Include="src\CPP\config.cpp" />
     <ClCompile Include="src\CPP\log.cpp" />
     <ClCompile Include="src\CPP\main_client.cpp" />
+    <ClCompile Include="src\CPP\SFML_window.cpp" />
     <ClCompile Include="src\CPP\socketException.cpp" />
     <ClCompile Include="src\CPP\socketWindows.cpp" />
   </ItemGroup>
@@ -22,6 +23,7 @@
     <ClInclude Include="src\include\client.hpp" />
     <ClInclude Include="src\include\config.hpp" />
     <ClInclude Include="src\include\log.hpp" />
+    <ClInclude Include="src\include\SFML_window.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{79BBF9AB-EE6D-4205-9D9C-AEE884BDAC19}</ProjectGuid>
@@ -62,7 +64,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(projectDir)\..\..\SFML\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
