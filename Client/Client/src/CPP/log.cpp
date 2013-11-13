@@ -3,19 +3,19 @@
 
 Logger* Logger::m_Instance = NULL;
     
-Logger* Logger::Instance() {
-    if (!m_Instance) 
+Logger* Logger::Instance()
+{
+   if (!m_Instance) 
         m_Instance = new Logger;
-        
     return m_Instance;
 }
 
-bool Logger::open(const char* file) {
+bool Logger::open(const char* file)
+{
     logFile.open(file);
 	return true;
 }
 
-//void Logger::log(int level, const char* message)
 void Logger::log(int level, std::string message)
 {
     switch (level) {
@@ -34,7 +34,7 @@ void Logger::log(int level, std::string message)
         default:
             logFile << __DATE__ << " " << __TIME__ << " | " << message << std::endl;
             break;
-        }            
+        }
 }
 
 bool Logger::close()

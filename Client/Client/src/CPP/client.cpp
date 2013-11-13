@@ -14,8 +14,8 @@ config.Load(PATH_CONFIG);
 	config.Get("player_life", player_life)    &&
     config.Get("errorMessage", errorMessage))
 	{
-		Logger::Instance()->log(0, adresse + " Connected");
 		socket = new AbstractSocket(port);
+		Logger::Instance()->log(0, adresse + " Connected");
 	}
 else
 	{
@@ -67,6 +67,7 @@ void		Client::run()
 				while (running == true)
 				{
 					recv_socket(data);
+					Logger::Instance()->log(2, "recv_socket = " + this->data);
 				}
 		    }
 	}
