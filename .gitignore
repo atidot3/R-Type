@@ -1,7 +1,6 @@
 #################
 ## Eclipse
 #################
-!*.dll
 
 *.pydevproject
 .project
@@ -50,6 +49,7 @@ x64/
 build/
 [Bb]in/
 [Oo]bj/
+!*.dll
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
