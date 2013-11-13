@@ -1,6 +1,7 @@
 #include "client.hpp"
 #include "config.hpp"
 #include "time.h"
+#include "SFML_window.hpp"
 
 Client::Client(int port) : running(false)
 {
@@ -51,6 +52,9 @@ void		Client::run()
 {
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
+	sf::RenderWindow window(sf::VideoMode(400, 400), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
     try
@@ -64,10 +68,19 @@ void		Client::run()
 				_isAlive = true;
 				posx = 1;
 				posy = 1;
-				while (running == true)
+				while (running == true && window.isOpen())
 				{
+					sf::Event event;
+					 while (window.pollEvent(event))
+					   {
+					     if (event.type == sf::Event::Closed)
+				          window.close();
+						}
+					window.clear();
+					window.draw(shape);
+					window.display();
 					recv_socket(data);
-					Logger::Instance()->log(2, "recv_socket = " + this->data);
+
 				}
 		    }
 	}
