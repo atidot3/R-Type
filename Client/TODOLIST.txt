@@ -1,3 +1,5 @@
-Implémentation des fonctions de base.
+﻿Implémentation des fonctions de base.
 Implémentation de la communication de base entre les deux executables.
 Création du diagramme de class.
+
+SEGFAULT client lorsque le fichier de conf est mauvais, à régler.

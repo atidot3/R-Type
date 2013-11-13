@@ -15,7 +15,8 @@ bool Logger::open(const char* file) {
 	return true;
 }
 
-void Logger::log(int level, const char* message)
+//void Logger::log(int level, const char* message)
+void Logger::log(int level, std::string message)
 {
     switch (level) {
         case 0:

@@ -14,13 +14,13 @@ config.Load(PATH_CONFIG);
 	config.Get("player_life", player_life)    &&
     config.Get("errorMessage", errorMessage))
 	{
-    cout << "votre ip est :" << adresse << endl << "votre port est: " << port << endl;
+		Logger::Instance()->log(0, adresse + " Connected");
+		socket = new AbstractSocket(port);
 	}
 else
 	{
-	  cout << "Missing parameter in configuration file." << endl;
+	  Logger::Instance()->log(2, "Invalide configuration file");
 	}
-	socket = new AbstractSocket(port);
 }
 
 Client::~Client()
@@ -61,7 +61,6 @@ void		Client::run()
 		    if (buff == WELCOME)
 		    {
 		        cout << "New client " << adresse << endl;
-				Logger::Instance()->log(0, "Connected\n");
 				_isAlive = true;
 				posx = 1;
 				posy = 1;
@@ -102,7 +101,7 @@ void	Client::parser(string &data) const
 		{
 			cout << Type[i] << " ok" << endl;
 			// recuperer les param
-		return;
+			return;
 		}
 	}
 	cout << ERROR_INSTRUCTION;
