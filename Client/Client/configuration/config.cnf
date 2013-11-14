@@ -11,3 +11,5 @@ port=	4243
 player_name=	coincoin
 player_life=	1
 errorMessage = canard fail
+WindowsX = 600
+WindowsY = 400

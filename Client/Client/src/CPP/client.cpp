@@ -13,6 +13,8 @@ config.Load(PATH_CONFIG);
     config.Get("port", port)    &&
 	config.Get("player_name", player_name)    &&
 	config.Get("player_life", player_life)    &&
+	config.Get("WindowsX", WindowsX)    &&
+	config.Get("WindowsY", WindowsY)    &&
     config.Get("errorMessage", errorMessage))
 	{
 		socket = new AbstractSocket(port);
@@ -52,7 +54,7 @@ void		Client::run()
 {
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
-	sf::RenderWindow window(sf::VideoMode(400, 400), "SFML works!");
+	sf::RenderWindow window(sf::VideoMode(WindowsX, WindowsY), "SFML works!");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
     srand(time(NULL));
@@ -66,8 +68,6 @@ void		Client::run()
 		    {
 		        cout << "New client " << adresse << endl;
 				_isAlive = true;
-				posx = 1;
-				posy = 1;
 				while (running == true && window.isOpen())
 				{
 					sf::Event event;

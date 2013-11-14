@@ -59,8 +59,8 @@ private:
 	string		player_name;
 	string      errorMessage;
 	string		data;
-	int			posx;
-	int			posy;
+	int			WindowsX;
+	int			WindowsY;
 	int			life;
 	bool        _isAlive;
 };
