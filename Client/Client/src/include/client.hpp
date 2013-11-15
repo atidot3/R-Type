@@ -1,3 +1,6 @@
+#ifndef __CLIENT_HPP__
+#define	__CLIENT_HPP__
+
 #include <list>
 #include <iostream>
 
@@ -86,3 +89,5 @@ private:
 	int			life;
 	bool        _isAlive;
 };
+
+#endif /* __CLIENT_HPP__ /*
