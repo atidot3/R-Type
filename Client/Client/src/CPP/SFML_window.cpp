@@ -1,8 +1,37 @@
 #include "SFML_window.hpp"
+//#include "client.hpp"
 
-int SFML_test()
+	SFML_win::SFML_win()
+	{
+	//    sf::RenderWindow window(sf::VideoMode(this->win_x, this->win_y), "R-Type");
+	}
+
+	SFML_win::~SFML_win()
+	{
+	}
+
+/*	int SFML_win::get_win_x()
+	{
+		return (0);
+	}
+
+	int SFML_win::get_win_y()
+	{
+		return (this->win_y);
+	}
+
+	void SFML_win::set_win_x()
+	{
+		this->win_x = this->get_win_x();
+	}
+
+	void SFML_win::set_win_y()
+	{
+		this->win_y = this->get_win_y();
+	}
+
+/*int SFML_test()
 {
-	/*
     sf::RenderWindow window(sf::VideoMode(400, 400), "SFML works!");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
@@ -20,6 +49,6 @@ int SFML_test()
         window.draw(shape);
         window.display();
     }
-	*/
+	
     return 0;
-}
+}*/
