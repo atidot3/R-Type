@@ -103,6 +103,9 @@ void	Client::parse_all_data(string &data) const
 	{
 		if (data.find(Opt[i]))
 			cout << Opt[i] << endl;
+		else
+			cout << ERROR_INSTRUCTION;
+
 	}
 }
 
