@@ -56,7 +56,6 @@ void		Client::run()
 	string	buff, ip;
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
-	//new_win = new SFML_win;
     try
 	{
 		running = true;
@@ -66,7 +65,6 @@ void		Client::run()
 		    {
 		        cout << "New client " << adresse << endl;
 				_isAlive = true;
-				new_win = new SFML_win;
 				while (running == true)
 				{
 					recv_socket(data);

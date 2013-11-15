@@ -84,12 +84,10 @@ private:
 	string		player_name;
 	string      errorMessage;
 	string		data;
-	int			life;
-	bool        _isAlive;
-
-	protected:
 	int			WindowsX;
 	int			WindowsY;
+	int			life;
+	bool        _isAlive;
 };
 
 #endif /* __CLIENT_HPP__ */
