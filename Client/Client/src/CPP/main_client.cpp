@@ -9,7 +9,6 @@ using namespace std;
 
 int	main()
 {
-	SFML_test();
 	Logger::Instance()->open("Client.txt");
 	Logger::Instance()->log(0, "----------------Client Initialized-------------\n");
 	srand(43);
