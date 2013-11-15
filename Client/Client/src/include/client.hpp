@@ -33,8 +33,8 @@
                                        OPT(positionY), \
                                        OPT(life)
 #define NBR_ITEM 4 //nombre d'item dans MESSAGE_OPT +1
-#define GET_OPT__ITEM(msg)   _##msg##_
-#define GET_OPT_SRTING_ITEM(msg)  #msg
+#define GET_OPT__OPT(msg)   _##msg##_
+#define GET_OPT_SRTING_OPT(msg)  #msg
 
 enum MessagesEnum
 {
@@ -47,11 +47,11 @@ static const char* Type[] =
 
 enum MessagesOptEnum
 {
-   MESSAGE_OPT(GET_OPT__ITEM)
+   MESSAGE_OPT(GET_OPT__OPT)
 };
 static const char* Opt[] = 
 {
-   MESSAGE_OPT(GET_OPT_SRTING_ITEM)
+   MESSAGE_OPT(GET_OPT_SRTING_OPT)
 };
 
 using namespace std;
