@@ -54,9 +54,6 @@ void		Client::run()
 {
 	Logger::Instance()->open("Client.txt");
 	string	buff, ip;
-	sf::RenderWindow window(sf::VideoMode(WindowsX, WindowsY), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;
     try
@@ -68,19 +65,9 @@ void		Client::run()
 		    {
 		        cout << "New client " << adresse << endl;
 				_isAlive = true;
-				while (running == true && window.isOpen())
+				while (running == true)
 				{
-					sf::Event event;
-					 while (window.pollEvent(event))
-					   {
-					     if (event.type == sf::Event::Closed)
-				          window.close();
-						}
-					window.clear();
-					window.draw(shape);
-					window.display();
 					recv_socket(data);
-
 				}
 		    }
 	}
@@ -106,15 +93,29 @@ bool	Client::send_socket(string &data) const
 	return (true);
 }
 
-void	Client::parser(string &data) const
+
+void	Client::parse_all_data(string &data) const
 {
-    int totalItem = sizeof(Type)/4; //nombre objet +1
+    int totalItem = sizeof(Opt) / NBR_ITEM; //nombre objet +1
+	if (data.empty())
+		return;
     for (int i = 0; i < totalItem; i++)
 	{
-		if (data == Type[i])
+		if (data.find(Opt[i]))
+			cout << Opt[i] << endl;
+	}
+}
+
+void	Client::parser(string &data) const
+{
+    int totalItem = sizeof(Type) / NBR_ITEM; //nombre objet +1
+	if (data.empty())
+		return;
+    for (int i = 0; i < totalItem; i++)
+	{
+		if (data.find(Type[i]))
 		{
-			cout << Type[i] << " ok" << endl;
-			// recuperer les param
+			parse_all_data(data);
 			return;
 		}
 	}

@@ -14,6 +14,8 @@
 #define SUCCESS	1
 #define FAILURE	-1
 #define ERROR_INSTRUCTION "Bad Instruction\n"
+
+/* fonction parser selon le type d'objet */
 #define MESSAGE_LIST(ITEM)                          \
                                        ITEM(player), \
                                        ITEM(weapon), \
@@ -21,6 +23,16 @@
 #define NBR_ITEM 4 //nombre d'item dans MESSAGE_LIST +1
 #define GET_LIST__ITEM(msg)   _##msg##_
 #define GET_LIST_SRTING_ITEM(msg)  #msg
+
+/* fonction parser selon le type d'objet */
+#define MESSAGE_OPT(OPT)                          \
+                                       OPT(positionX), \
+                                       OPT(positionY), \
+                                       OPT(life)
+#define NBR_ITEM 4 //nombre d'item dans MESSAGE_OPT +1
+#define GET_OPT__ITEM(msg)   _##msg##_
+#define GET_OPT_SRTING_ITEM(msg)  #msg
+
 enum MessagesEnum
 {
    MESSAGE_LIST(GET_LIST__ITEM)
@@ -28,6 +40,15 @@ enum MessagesEnum
 static const char* Type[] = 
 {
    MESSAGE_LIST(GET_LIST_SRTING_ITEM)
+};
+
+enum MessagesOptEnum
+{
+   MESSAGE_OPT(GET_OPT__ITEM)
+};
+static const char* Opt[] = 
+{
+   MESSAGE_OPT(GET_OPT_SRTING_ITEM)
 };
 
 using namespace std;
@@ -48,6 +69,7 @@ public:
 	bool		send_socket(string &data) const;
 	bool		recv_socket(string &data);
 	void		parser(string &data) const;
+	void		parse_all_data(string &data) const;
 
 private:
 	ISocket		*socket;
