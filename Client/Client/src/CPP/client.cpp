@@ -94,19 +94,26 @@ bool	Client::send_socket(string &data) const
 }
 
 
-void	Client::parse_all_data(string &data) const
+void	Client::parse_all_data(const char *item, string &data) const
 {
-    int totalItem = sizeof(Opt) / NBR_ITEM; //nombre objet +1
+    int totalItem = sizeof(Opt) / NBR_OPT; //nombre objet +1
+	int	pos;
+	string n_item;
 	if (data.empty())
 		return;
+//	map<string,string>::const_iterator iter = data_parser.begin();
+	string	value;
+
     for (int i = 0; i < totalItem; i++)
 	{
-		if (data.find(Opt[i]))
+		if ((pos = data.find(Opt[i])))
+		{
 			cout << Opt[i] << endl;
-		else
-			cout << ERROR_INSTRUCTION;
-
+/* Parse item comme identifiant et récupère les données
+à intégrer sur la map pour la SFML */
+		}
 	}
+	cout << ERROR_INSTRUCTION;
 }
 
 void	Client::parser(string &data) const
@@ -118,7 +125,7 @@ void	Client::parser(string &data) const
 	{
 		if (data.find(Type[i]))
 		{
-			parse_all_data(data);
+			parse_all_data(Type[i], data);
 			return;
 		}
 	}

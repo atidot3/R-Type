@@ -32,7 +32,7 @@
                                        OPT(positionX), \
                                        OPT(positionY), \
                                        OPT(life)
-#define NBR_ITEM 4 //nombre d'item dans MESSAGE_OPT +1
+#define NBR_OPT 4 //nombre d'item dans MESSAGE_OPT +1
 #define GET_OPT__OPT(msg)   _##msg##_
 #define GET_OPT_SRTING_OPT(msg)  #msg
 
@@ -72,8 +72,8 @@ public:
 	bool		send_socket(string &data) const;
 	bool		recv_socket(string &data);
 	void		parser(string &data) const;
-	void		parse_all_data(string &data) const;
-
+	void		parse_all_data(const char *item, string &data) const;
+	
 private:
 	ISocket		*socket;
 	bool		running;
@@ -90,6 +90,7 @@ private:
 protected:
 	int			WindowsX;
 	int			WindowsY;
+	map<string,string> data_parser;
 };
 
 #endif /* __CLIENT_HPP__ */
