@@ -1,3 +1,6 @@
+#include <sstream>
+#include <vector>
+#include <string>
 #include "client.hpp"
 #include "config.hpp"
 #include "time.h"
@@ -93,29 +96,48 @@ bool	Client::send_socket(string &data) const
 	return (true);
 }
 
+ // NE MARCHE PAS A L'INTERIEUR DE L'INSTANCE CLIENT :(
+void	str_split(std::list <string>& dst, const std::string& src, char sep)
+{
+    std::list < char > buffer;
+     
+    for(std::size_t i(0); i < src.size(); ++i)
+	{
+        if(src[i] == sep)
+            dst.push_back(std::string(buffer.begin(), buffer.end())),
+            buffer.clear();
+        else
+            buffer.push_back(src[i]);
+	}
+	list<string>::iterator p = dst.begin();
+	while(p != dst.end())
+	{
+		cout << *p << endl;
+		p++;
+	}
+
+}
 
 void	Client::parse_all_data(const char *item, string &data) const
 {
     int totalItem = sizeof(Opt) / NBR_OPT; //nombre objet +1
 	int	pos;
+	std::list<string> ma_liste; 
 	string n_item;
 	if (data.empty())
 		return;
-//	map<string,string>::const_iterator iter = data_parser.begin();
-	string	value;
+	str_split(ma_liste, data, ':');
 
-    for (int i = 0; i < totalItem; i++)
+/*    for (int i = 0; i < totalItem; i++)
 	{
 		if ((pos = data.find(Opt[i])))
 		{
 			cout << Opt[i] << endl;
-/* Parse item comme identifiant et récupère les données
-à intégrer sur la map pour la SFML */
+ Parse item comme identifiant et récupère les données
+à intégrer sur la map pour la SFML 
 		}
-	}
-	cout << ERROR_INSTRUCTION;
-}
-
+	}*/
+} 
 void	Client::parser(string &data) const
 {
     int totalItem = sizeof(Type) / NBR_ITEM; //nombre objet +1

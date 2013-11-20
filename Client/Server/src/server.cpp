@@ -50,7 +50,7 @@ Game*&      Server::getCurrentGame()
 void		Server::run()
 {
 	string	buff, ip;
-	string data = "player positionX 19 positionY 20 life 10";
+	string data = "player positionX : 19 positionY : 20 life : 10";
     Player* p;
     srand(time(NULL));
 	cout << "\t\t\t\tR-Type Started..." << endl << endl << endl << "Please wait...." << endl;

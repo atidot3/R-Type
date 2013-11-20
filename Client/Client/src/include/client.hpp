@@ -3,6 +3,9 @@
 
 #include <list>
 #include <iostream>
+#include <sstream>
+#include <vector>
+#include <string>
 
 #include "log.hpp"
 #include <winsock2.h>
@@ -73,6 +76,7 @@ public:
 	bool		recv_socket(string &data);
 	void		parser(string &data) const;
 	void		parse_all_data(const char *item, string &data) const;
+//	void		str_split(std::list<string>& dst, const std::string& src, char sep);
 	
 private:
 	ISocket		*socket;
@@ -91,6 +95,9 @@ protected:
 	int			WindowsX;
 	int			WindowsY;
 	map<string,string> data_parser;
+
 };
+
+	void		string_split(std::list<string>& dst, const std::string& src, char sep);
 
 #endif /* __CLIENT_HPP__ */
